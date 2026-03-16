@@ -25,9 +25,9 @@ export default function Home() {
           </div>
 
           <div className="md:col-span-5 relative w-full aspect-[3/4] md:h-[60vh] max-w-sm mx-auto md:ml-auto">
-            <div className="absolute inset-0 border border-brand-void/10 bg-brand-void/5 flex items-center justify-center p-2 rounded-2xl overflow-hidden backdrop-blur-xs">
+            <div className="absolute inset-0 border border-brand-void/10 bg-brand-void/5 flex items-center justify-center p-3 rounded-[3rem] overflow-hidden backdrop-blur-xs">
                {/* B/W Image Placeholder */}
-               <div className="relative w-full h-full bg-brand-void/10 rounded-xl flex items-center justify-center overflow-hidden">
+               <div className="relative w-full h-full bg-brand-void/10 rounded-[2.5rem] flex items-center justify-center overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-void/20 to-transparent"></div>
                   <span className="font-heading text-brand-void/40 uppercase tracking-widest text-xs z-10">
                     [ PORTRAIT ]
@@ -58,7 +58,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             {/* Item 1: Upcoming Book */}
-            <Link href="/books" className="group relative flex flex-col justify-between aspect-[4/5] p-8 border border-brand-alabaster/10 bg-brand-void hover:bg-brand-alabaster/5 transition-colors overflow-hidden">
+            <Link href="/books" className="group relative flex flex-col justify-between aspect-[4/5] p-10 rounded-[2.5rem] border border-brand-alabaster/10 bg-brand-void hover:bg-brand-alabaster/5 transition-colors overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-solar/10 blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-solar/20 transition-all"></div>
               <div className="flex justify-between items-start z-10">
                 <span className="text-brand-alabaster/50 font-heading text-xs uppercase tracking-widest">
@@ -77,7 +77,7 @@ export default function Home() {
             </Link>
 
             {/* Item 2: Latest Research Paper */}
-            <Link href="/resources" className="group relative flex flex-col justify-between aspect-[4/5] p-8 border border-brand-alabaster/10 bg-brand-void hover:bg-brand-alabaster/5 transition-colors overflow-hidden">
+            <Link href="/resources" className="group relative flex flex-col justify-between aspect-[4/5] p-10 rounded-[2.5rem] border border-brand-alabaster/10 bg-brand-void hover:bg-brand-alabaster/5 transition-colors overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-dawn/10 blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-dawn/20 transition-all"></div>
               <div className="flex justify-between items-start z-10">
                 <span className="text-brand-alabaster/50 font-heading text-xs uppercase tracking-widest">
@@ -96,7 +96,7 @@ export default function Home() {
             </Link>
 
             {/* Item 3: New Music Release */}
-            <Link href="/creative" className="group relative flex flex-col justify-between aspect-[4/5] p-8 border border-brand-alabaster/10 bg-brand-void hover:bg-brand-alabaster/5 transition-colors overflow-hidden">
+            <Link href="/creative" className="group relative flex flex-col justify-between aspect-[4/5] p-10 rounded-[2.5rem] border border-brand-alabaster/10 bg-brand-void hover:bg-brand-alabaster/5 transition-colors overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-slate/20 blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-slate/30 transition-all"></div>
               <div className="flex justify-between items-start z-10">
                 <span className="text-brand-alabaster/50 font-heading text-xs uppercase tracking-widest">
