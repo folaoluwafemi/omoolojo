@@ -5,37 +5,36 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* 1. HERO SECTION */}
-      <section className="relative h-screen w-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="mx-auto max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <section className="relative h-screen w-full flex flex-col justify-center px-4 sm:px-6 lg:px-12 overflow-hidden bg-brand-alabaster">
+        {/* Abstract SVG Background Elements */}
+        <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden mix-blend-multiply opacity-50">
+          <img src="/far_left_abstract.svg" alt="" className="absolute -left-[10%] -top-[10%] h-[120%] w-auto object-cover opacity-60" />
+          <img src="/middle_abstract.svg" alt="" className="absolute left-[30%] -bottom-[20%] h-[100%] w-auto object-contain opacity-50" />
+          <img src="/far_right_abstract.svg" alt="" className="absolute right-0 -top-[10%] h-[110%] w-auto object-cover opacity-60" />
+        </div>
+
+        <div className="mx-auto max-w-7xl w-full flex items-center h-full relative z-10">
           
-          <div className="md:col-span-7 flex flex-col space-y-10 z-10 pt-16">
-            <h1 className="text-5xl sm:text-7xl lg:text-[7rem] font-heading font-bold uppercase tracking-tighter leading-[0.85]">
-              The <br />
-              <span className="text-brand-solar font-medium opacity-90">Visionary</span> <br />
-              Architect
+          <div className="flex flex-col space-y-6 pt-20 w-full md:w-[60%] lg:w-[50%] z-20">
+            <h1 className="text-6xl sm:text-7xl lg:text-[8rem] xl:text-[9rem] font-heading font-black uppercase tracking-tighter leading-[0.85] text-brand-void mb-4">
+              THE <br />
+              <span className="text-brand-solar">VISIONARY</span> <br />
+              ARCHITECT
             </h1>
-            <p className="text-xl md:text-2xl font-sans max-w-lg leading-relaxed text-brand-slate font-light">
-              Bridging the gap between strict engineering precision and profound Christian metaphysics.
+            <p className="text-lg md:text-xl lg:text-2xl font-sans max-w-lg leading-relaxed text-brand-slate font-light">
+              Bridging the gap between strict engineering precision and profound Christian metaphysics
             </p>
-            <div className="pt-4">
-              <Link href="/my-story" className="ethereal-btn inline-flex items-center gap-4 group">
-                Discover the Journey <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-              </Link>
-            </div>
           </div>
 
-          <div className="md:col-span-5 relative w-full aspect-[3/4] md:h-[60vh] max-w-sm mx-auto md:ml-auto">
-            <div className="absolute inset-0 border border-brand-void/10 bg-brand-void/5 flex items-center justify-center p-3 rounded-[3rem] overflow-hidden backdrop-blur-xs">
-               {/* B/W Image Placeholder */}
-               <div className="relative w-full h-full bg-brand-void/10 rounded-[2.5rem] flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/20 to-transparent"></div>
-                  <span className="font-heading text-brand-void/40 uppercase tracking-widest text-xs z-10">
-                    [ PORTRAIT ]
-                  </span>
-               </div>
-            </div>
-          </div>
-
+        </div>
+        
+        {/* Large Cut-out Hero Image */}
+        <div className="absolute bottom-0 right-0 w-full h-[70vh] md:w-[65vw] md:h-[85vh] flex justify-end items-end z-10 pointer-events-none">
+          <img 
+             src="/israel_hero_image.png" 
+             alt="Oluwafemi Israel" 
+             className="w-full h-full object-contain object-bottom md:object-right-bottom scale-110 md:scale-100 origin-bottom pr-0 md:pr-12 lg:pr-24"
+          />
         </div>
       </section>
 
