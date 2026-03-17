@@ -6,12 +6,7 @@ export default function Home() {
     <div className="flex flex-col">
       {/* 1. HERO SECTION */}
       <section className="relative h-screen w-full flex flex-col justify-center px-4 sm:px-6 lg:px-12 overflow-hidden bg-brand-alabaster">
-        {/* Abstract SVG Background Elements */}
-        <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden mix-blend-multiply opacity-[0.03]">
-          <img src="/far_left_abstract.svg" alt="" className="absolute -left-[10%] -top-[10%] h-[120%] w-auto object-cover" />
-          <img src="/middle_abstract.svg" alt="" className="absolute left-[30%] -bottom-[20%] h-[100%] w-auto object-contain" />
-          <img src="/far_right_abstract.svg" alt="" className="absolute right-0 -top-[10%] h-[110%] w-auto object-cover" />
-        </div>
+        {/* Clean Alabaster Background */}
 
         <div className="mx-auto max-w-7xl w-full flex items-center h-full relative z-10">
           
