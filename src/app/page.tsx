@@ -52,60 +52,78 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             {/* Item 1: Upcoming Book */}
-            <Link href="/books" className="group relative flex flex-col justify-between aspect-[4/5] p-10 rounded-[2.5rem] border border-brand-alabaster/10 bg-brand-void hover:bg-brand-alabaster/5 transition-colors overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-solar/10 blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-solar/20 transition-all"></div>
-              <div className="flex justify-between items-start z-10">
-                <span className="text-brand-alabaster/50 font-heading text-xs uppercase tracking-widest">
-                  01 // Upcoming Book
-                </span>
-                <ArrowRight className="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-solar" />
-              </div>
-              <div className="z-10">
-                <h3 className="text-3xl font-heading uppercase tracking-tight mb-4 group-hover:text-brand-solar transition-colors">
-                  Spiritual Mathematics
-                </h3>
-                <p className="font-sans font-light text-brand-alabaster/60 text-sm leading-relaxed">
-                  Models for life design: circumstance vs time, and the deep structures of good and evil.
-                </p>
-              </div>
+            <Link href="/books" className="group flex flex-col items-start gap-4 border-0">
+               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-alabaster/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(255,255,255,0.1)]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/80 to-transparent z-0"></div>
+                  
+                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
+                    01 // Upcoming Book
+                  </span>
+                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-solar/20 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-solar/30 transition-all z-0"></div>
+                  <ArrowRight className="absolute top-8 right-8 w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-solar z-10" />
+
+                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-[0.65rem] z-10">
+                    [ COVER PLACEHOLDER ]
+                  </span>
+                  <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tighter text-brand-alabaster z-10 mt-2 pr-4 group-hover:text-brand-solar transition-colors">
+                    Spiritual Mathematics
+                  </h3>
+               </div>
+               <div className="px-2">
+                 <p className="font-sans font-light text-brand-alabaster/60 text-sm leading-relaxed">
+                    Models for life design: circumstance vs time, and the deep structures of good and evil.
+                 </p>
+               </div>
             </Link>
 
             {/* Item 2: Latest Research Paper */}
-            <Link href="/resources" className="group relative flex flex-col justify-between aspect-[4/5] p-10 rounded-[2.5rem] border border-brand-alabaster/10 bg-brand-void hover:bg-brand-alabaster/5 transition-colors overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-dawn/10 blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-dawn/20 transition-all"></div>
-              <div className="flex justify-between items-start z-10">
-                <span className="text-brand-alabaster/50 font-heading text-xs uppercase tracking-widest">
-                  02 // Latest Paper
-                </span>
-                <ArrowRight className="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-dawn" />
-              </div>
-              <div className="z-10">
-                <h3 className="text-3xl font-heading uppercase tracking-tight mb-4 group-hover:text-brand-dawn transition-colors">
-                  Metamaterial Integration
-                </h3>
-                <p className="font-sans font-light text-brand-alabaster/60 text-sm leading-relaxed">
-                  Theoretical design and practical execution for ultra-wideband modern 5G communication.
-                </p>
-              </div>
+            <Link href="/resources" className="group flex flex-col items-start gap-4 border-0">
+               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-alabaster/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(255,255,255,0.1)]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/80 to-transparent z-0"></div>
+                  
+                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
+                    02 // Latest Paper
+                  </span>
+                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-dawn/20 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-dawn/30 transition-all z-0"></div>
+                  <ArrowRight className="absolute top-8 right-8 w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-dawn z-10" />
+
+                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-[0.65rem] z-10">
+                    [ THUMBNAIL PLACEHOLDER ]
+                  </span>
+                  <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tighter text-brand-alabaster z-10 mt-2 pr-4 group-hover:text-brand-dawn transition-colors">
+                    Metamaterial Integration
+                  </h3>
+               </div>
+               <div className="px-2">
+                 <p className="font-sans font-light text-brand-alabaster/60 text-sm leading-relaxed">
+                    Theoretical design and practical execution for ultra-wideband modern 5G communication.
+                 </p>
+               </div>
             </Link>
 
             {/* Item 3: New Music Release */}
-            <Link href="/creative" className="group relative flex flex-col justify-between aspect-[4/5] p-10 rounded-[2.5rem] border border-brand-alabaster/10 bg-brand-void hover:bg-brand-alabaster/5 transition-colors overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-slate/20 blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-slate/30 transition-all"></div>
-              <div className="flex justify-between items-start z-10">
-                <span className="text-brand-alabaster/50 font-heading text-xs uppercase tracking-widest">
-                  03 // New Release
-                </span>
-                <ArrowRight className="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-alabaster" />
-              </div>
-              <div className="z-10">
-                <h3 className="text-3xl font-heading uppercase tracking-tight mb-4 transition-colors">
-                  Hallelujah! Jesus Reigns
-                </h3>
-                <p className="font-sans font-light text-brand-alabaster/60 text-sm leading-relaxed">
-                  A pure worship and afro-fusion sonic experience. Available on all major platforms.
-                </p>
-              </div>
+            <Link href="/creative" className="group flex flex-col items-start gap-4 border-0">
+               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-alabaster/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(255,255,255,0.1)]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/80 to-transparent z-0"></div>
+                  
+                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
+                    03 // New Release
+                  </span>
+                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-slate/30 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-slate/40 transition-all z-0"></div>
+                  <ArrowRight className="absolute top-8 right-8 w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-alabaster z-10" />
+
+                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-[0.65rem] z-10">
+                    [ ARTWORK PLACEHOLDER ]
+                  </span>
+                  <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tighter text-brand-alabaster z-10 mt-2 pr-4 transition-colors">
+                    Hallelujah! Jesus Reigns
+                  </h3>
+               </div>
+               <div className="px-2">
+                 <p className="font-sans font-light text-brand-alabaster/60 text-sm leading-relaxed">
+                    A pure worship and afro-fusion sonic experience. Available on all major platforms.
+                 </p>
+               </div>
             </Link>
 
           </div>
