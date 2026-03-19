@@ -20,9 +20,6 @@ export default function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
 
-  // Strip header completely purely on individual book detail routes
-  if (pathname?.startsWith("/book/")) return null;
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
@@ -34,6 +31,9 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Strip header completely purely on individual book detail routes
+  if (pathname?.startsWith("/book/")) return null;
 
   return (
     <header 
