@@ -34,16 +34,16 @@ export default function Home() {
       </section>
 
       {/* 2. THE SHOWCASE SECTION */}
-      <section className="relative h-screen w-full flex flex-col overflow-hidden bg-brand-void text-brand-alabaster">
+      <section className="relative min-h-[100vh] w-full flex flex-col pt-32 pb-24 lg:pt-0 overflow-hidden bg-brand-alabaster text-brand-void">
         <div className="mx-auto max-w-7xl w-full h-full flex flex-col justify-center px-4 sm:px-6 lg:px-8">
           
           <div className="flex justify-between items-end mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-medium tracking-tight uppercase text-brand-alabaster/90">
+            <h2 className="text-4xl md:text-5xl font-heading font-black tracking-tight uppercase text-brand-void">
               The Showcase
             </h2>
             <div className="hidden md:flex items-center gap-4 pb-2">
-              <span className="w-16 h-[1px] bg-brand-alabaster/30"></span>
-              <p className="text-brand-alabaster/50 uppercase font-heading tracking-widest text-xs">
+              <span className="w-16 h-[2px] bg-brand-void/20"></span>
+              <p className="text-brand-void/60 font-bold uppercase font-sans tracking-widest text-xs">
                 Trending & Current
               </p>
             </div>
@@ -51,51 +51,50 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
-            {/* Item 1: Upcoming Book */}
-            <Link href="/books" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-alabaster/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(255,255,255,0.1)]">
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/80 to-transparent z-0"></div>
+            {/* Item 1: Book -> mapped to Survivors internally */}
+            <Link href="/book/survivors" className="group flex flex-col items-start gap-4 border-0">
+               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.15)]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/50 to-transparent z-0"></div>
                   
-                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
-                    01 // Upcoming Book
+                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
+                    01 // Bestseller
                   </span>
-                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-solar/20 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-solar/30 transition-all z-0"></div>
+                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-solar/20 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-solar/40 transition-all z-0"></div>
                   <ArrowRight className="absolute top-8 right-8 w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-solar z-10" />
 
-                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-[0.65rem] z-10">
-                    [ COVER PLACEHOLDER ]
-                  </span>
-                  <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tighter text-brand-alabaster z-10 mt-2 pr-4 group-hover:text-brand-solar transition-colors">
-                    Spiritual Mathematics
+                  <img src="https://files.selar.co/product-images/2025/products/%E1%BB%8Cm%E1%BB%8D_Olojo/the-survivors-selar.com-68cee18849f88.jpg" alt="The Survivors" className="absolute inset-0 w-full h-full object-cover -z-10" />
+                  
+                  <h3 className="font-heading font-black text-2xl md:text-3xl uppercase tracking-tighter text-brand-alabaster z-10 mt-2 pr-4 group-hover:text-brand-solar transition-colors">
+                    The Survivors
                   </h3>
                </div>
                <div className="px-2">
-                 <p className="font-sans font-light text-brand-alabaster/60 text-sm leading-relaxed">
-                    Models for life design: circumstance vs time, and the deep structures of good and evil.
+                 <p className="font-sans font-medium text-brand-void/80 text-sm leading-relaxed">
+                    A tale of family, faith, and the silent wars at home.
                  </p>
                </div>
             </Link>
 
             {/* Item 2: Latest Research Paper */}
             <Link href="/resources" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-alabaster/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(255,255,255,0.1)]">
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/80 to-transparent z-0"></div>
+               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.15)]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/30 to-transparent z-0"></div>
                   
-                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
+                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
                     02 // Latest Paper
                   </span>
-                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-dawn/20 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-dawn/30 transition-all z-0"></div>
+                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-dawn/20 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-dawn/40 transition-all z-0"></div>
                   <ArrowRight className="absolute top-8 right-8 w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-dawn z-10" />
 
-                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-[0.65rem] z-10">
+                  <span className="font-heading text-brand-void/40 uppercase tracking-widest text-[0.65rem] z-10">
                     [ THUMBNAIL PLACEHOLDER ]
                   </span>
-                  <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tighter text-brand-alabaster z-10 mt-2 pr-4 group-hover:text-brand-dawn transition-colors">
+                  <h3 className="font-heading font-black text-2xl md:text-3xl uppercase tracking-tighter text-brand-void z-10 mt-2 pr-4 group-hover:text-brand-dawn transition-colors">
                     Metamaterial Integration
                   </h3>
                </div>
                <div className="px-2">
-                 <p className="font-sans font-light text-brand-alabaster/60 text-sm leading-relaxed">
+                 <p className="font-sans font-medium text-brand-void/80 text-sm leading-relaxed">
                     Theoretical design and practical execution for ultra-wideband modern 5G communication.
                  </p>
                </div>
@@ -103,24 +102,24 @@ export default function Home() {
 
             {/* Item 3: New Music Release */}
             <Link href="/creative" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-alabaster/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(255,255,255,0.1)]">
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/80 to-transparent z-0"></div>
+               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.15)]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/30 to-transparent z-0"></div>
                   
-                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
+                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
                     03 // New Release
                   </span>
-                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-slate/30 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-slate/40 transition-all z-0"></div>
-                  <ArrowRight className="absolute top-8 right-8 w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-alabaster z-10" />
+                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-slate/20 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-slate/40 transition-all z-0"></div>
+                  <ArrowRight className="absolute top-8 right-8 w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-void z-10" />
 
-                  <span className="font-heading text-brand-alabaster/40 uppercase tracking-widest text-[0.65rem] z-10">
+                  <span className="font-heading text-brand-void/40 uppercase tracking-widest text-[0.65rem] z-10">
                     [ ARTWORK PLACEHOLDER ]
                   </span>
-                  <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tighter text-brand-alabaster z-10 mt-2 pr-4 transition-colors">
+                  <h3 className="font-heading font-black text-2xl md:text-3xl uppercase tracking-tighter text-brand-void z-10 mt-2 pr-4 transition-colors">
                     Hallelujah! Jesus Reigns
                   </h3>
                </div>
                <div className="px-2">
-                 <p className="font-sans font-light text-brand-alabaster/60 text-sm leading-relaxed">
+                 <p className="font-sans font-medium text-brand-void/80 text-sm leading-relaxed">
                     A pure worship and afro-fusion sonic experience. Available on all major platforms.
                  </p>
                </div>

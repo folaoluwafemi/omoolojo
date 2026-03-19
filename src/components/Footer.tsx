@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="h-screen w-full flex flex-col justify-center items-center bg-brand-void text-brand-alabaster relative px-4 text-center overflow-hidden">
       
       {/* Absolute positioning background blur */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[800px] h-[400px] bg-brand-solar/5 blur-[100px] rounded-[100%] pointer-events-none"></div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[800px] h-[400px] bg-brand-solar/10 blur-[100px] rounded-[100%] pointer-events-none"></div>
 
       <div className="z-10 flex flex-col items-center space-y-8 max-w-2xl mt-16">
         <span className="font-heading text-6xl md:text-8xl lg:text-[10rem] font-bold uppercase tracking-tighter leading-none">
