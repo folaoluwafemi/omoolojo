@@ -1,25 +1,5 @@
 import Link from 'next/link';
-
-const books = [
-  {
-    title: "Soul-Aligned Intimacy",
-    description: "Unlocking the sacred power of soul-aligned intimacy.",
-    link: "https://selar.com/m/%E1%BB%8Cm%E1%BB%8D_Olojo",
-    coverUrl: "" // Placeholder
-  },
-  {
-    title: "Pleasure & Security",
-    description: "Pleasure is indispensable, security is more significant.",
-    link: "https://selar.com/m/%E1%BB%8Cm%E1%BB%8D_Olojo",
-    coverUrl: ""
-  },
-  {
-    title: "Models for Life Design",
-    description: "Models for life design: circumstance vs time, soul synergy.",
-    link: "https://selar.com/m/%E1%BB%8Cm%E1%BB%8D_Olojo",
-    coverUrl: ""
-  }
-];
+import { booksData } from '@/data/books';
 
 export default function BooksPage() {
   return (
@@ -29,36 +9,47 @@ export default function BooksPage() {
           Authored <br/> 
           <span className="text-brand-solar">Books</span>
         </h1>
-        <p className="text-xl font-sans text-brand-slate max-w-2xl font-light mb-16 md:mb-24">
+        <p className="text-xl font-sans text-brand-void/90 max-w-2xl font-medium mb-16 md:mb-24">
           A collection of works bridging theology, relationship dynamics, and life design.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
-          {books.map((book, idx) => (
-            <Link key={idx} href={book.link} target="_blank" className="group flex flex-col items-start gap-4 border-0">
-               {/* Cover Image Wrapper */}
-               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)]">
-                  {book.coverUrl ? (
-                    <img src={book.coverUrl} alt={book.title} className="absolute inset-0 w-full h-full object-cover" />
-                  ) : (
-                    <>
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-void/30 to-transparent opacity-50 z-0"></div>
-                      <span className="font-heading text-brand-void uppercase tracking-widest text-[0.65rem] z-10 opacity-40">
-                        [ BOOK COVER PLACEHOLDER ]
-                      </span>
-                      <h3 className="font-heading font-bold text-2xl uppercase tracking-tighter text-brand-void z-10 mt-2 pr-4">{book.title}</h3>
-                    </>
-                  )}
-               </div>
+          {booksData.map((book) => {
+             const href = book.slug ? `/book/${book.slug}` : (book.link || "#");
+             const target = book.slug ? "_self" : "_blank";
 
-               {/* Meta Details */}
-               <div className="flex flex-col space-y-2 px-2">
-                 <p className="font-sans text-brand-slate font-light leading-relaxed text-sm md:text-base">
-                   {book.description}
-                 </p>
-               </div>
-            </Link>
-          ))}
+             return (
+              <Link key={book.id} href={href} target={target} className="group flex flex-col items-start gap-4 border-0">
+                 {/* Cover Image Wrapper */}
+                 <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
+                    {book.coverUrl ? (
+                      <img src={book.coverUrl} alt={book.title} className="absolute inset-0 w-full h-full object-cover" />
+                    ) : (
+                      <>
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-void/30 to-transparent opacity-50 z-0"></div>
+                        <span className="font-heading text-brand-void uppercase tracking-widest text-[0.65rem] z-10 opacity-40">
+                          [ BOOK COVER PLACEHOLDER ]
+                        </span>
+                        <h3 className="font-heading font-bold text-2xl uppercase tracking-tighter text-brand-void z-10 mt-2 pr-4">{book.title}</h3>
+                      </>
+                    )}
+                 </div>
+
+                 {/* Meta Details */}
+                 <div className="flex flex-col space-y-3 px-2 mt-2">
+                   <div className="flex justify-between items-start gap-4 w-full">
+                      <h3 className="font-heading font-black text-2xl uppercase tracking-tighter text-brand-void pr-4 group-hover:text-brand-solar transition-colors">{book.title}</h3>
+                      <span className="bg-brand-void text-brand-alabaster px-4 py-1.5 font-sans text-[0.65rem] font-bold rounded-full uppercase tracking-widest whitespace-nowrap">
+                         {book.price}
+                      </span>
+                   </div>
+                   <p className="font-sans text-brand-void/80 font-medium leading-relaxed text-sm md:text-base pr-4">
+                     {book.description}
+                   </p>
+                 </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </div>
