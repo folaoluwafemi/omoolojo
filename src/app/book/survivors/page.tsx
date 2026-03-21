@@ -119,7 +119,7 @@ export default function SurvivorsPage() {
             &quot;We cannot look away from the silent wars waged at home. Survival is not just staying alive; it is finding the light when abandoned in the dark.&quot;
           </p>
           <cite className="font-sans font-black tracking-widest text-brand-solar uppercase text-sm not-italic">
-            â€” á»Œmá» á»Œlá»Ìjá»Ì
+            Ọmọ Ọlọ́jọ́
           </cite>
         </blockquote>
       </section>
