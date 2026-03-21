@@ -10,26 +10,26 @@ export default function Home() {
         <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-brand-solar/10 blur-[120px] rounded-full z-0 pointer-events-none hidden lg:block"></div>
         <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-brand-dawn/10 blur-[100px] rounded-full z-0 pointer-events-none"></div>
 
-        <div className="mx-auto max-w-7xl w-full flex items-center lg:h-full relative z-20">`n          <div className="flex flex-col w-full lg:w-[70%] z-20">
-            <div className="inline-flex items-center space-x-3 mb-8 px-4 py-2 border border-brand-void/10 rounded-full w-fit bg-brand-alabaster/50 backdrop-blur-sm">
-              <span className="w-2 h-2 rounded-full bg-brand-solar animate-pulse"></span>
-              <span className="font-heading uppercase font-bold tracking-[0.2em] text-[0.65rem] text-brand-void/60">
-                The Multidisciplinary Thinker
-              </span>
-            </div>
-
-            <h1 className="text-5xl md:text-7xl lg:text-[8rem] font-heading font-black uppercase tracking-tighter leading-[0.85] text-brand-void mb-4 md:mb-8 relative z-10 drop-shadow-sm">
-              Oluwafemi <br />
-              <span className="text-brand-void/20">Israel</span>
-              <span className="block text-3xl md:text-5xl lg:text-7xl mt-4 text-brand-solar">
-                ( Ọmọ Ọlọ́jọ́ )
-              </span>
-            </h1>
-
-            <p className="text-xl md:text-2xl font-sans font-medium text-brand-void/80 max-w-2xl leading-relaxed relative z-10 bg-brand-alabaster/30 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none p-4 md:p-0 rounded-2xl md:rounded-none">
-              An electrical engineer, researcher, author, and philosophical thinker whose life&apos;s work is driven by the rigorous integration of <span className="italic">scientific reasoning</span> and <span className="italic">faith-based metaphysics</span>.
-            </p>
+        <div className="mx-auto max-w-7xl w-full flex items-center lg:h-full relative z-20"><div className="flex flex-col w-full lg:w-[70%] z-20">
+          <div className="inline-flex items-center space-x-3 mb-8 px-4 py-2 border border-brand-void/10 rounded-full w-fit bg-brand-alabaster/50 backdrop-blur-sm">
+            <span className="w-2 h-2 rounded-full bg-brand-solar animate-pulse"></span>
+            <span className="font-heading uppercase font-bold tracking-[0.2em] text-[0.65rem] text-brand-void/60">
+              The Multidisciplinary Thinker
+            </span>
           </div>
+
+          <h1 className="text-5xl md:text-7xl lg:text-[8rem] font-heading font-black uppercase tracking-tighter leading-[0.85] text-brand-void mb-4 md:mb-8 relative z-10 drop-shadow-sm">
+            Oluwafemi <br />
+            <span className="text-brand-void/20">Israel</span>
+            <span className="block text-3xl md:text-5xl lg:text-7xl mt-4 text-brand-solar">
+              ( Ọmọ Ọlọ́jọ́ )
+            </span>
+          </h1>
+
+          <p className="text-xl md:text-2xl font-sans font-medium text-brand-void/80 max-w-2xl leading-relaxed relative z-10 bg-brand-alabaster/30 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none p-4 md:p-0 rounded-2xl md:rounded-none">
+            An electrical engineer, researcher, author, and philosophical thinker whose life&apos;s work is driven by the rigorous integration of <span className="italic">scientific reasoning</span> and <span className="italic">faith-based metaphysics</span>.
+          </p>
+        </div>
 
         </div>
 
