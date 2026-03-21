@@ -8,9 +8,9 @@ export default function Home() {
       <section className="relative pt-20 lg:pt-0 lg:h-screen w-full flex flex-col justify-start lg:justify-center px-4 sm:px-6 lg:px-12 overflow-hidden bg-brand-alabaster">
         {/* Clean Alabaster Background */}
         <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-brand-solar/10 blur-[120px] rounded-full z-0 pointer-events-none hidden lg:block"></div>
-        <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-brand-dawn/10 blur-[100px] rounded-full z-0 pointer-events-none"></div>
+        <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-brand-solar/10 blur-[100px] rounded-full z-0 pointer-events-none"></div>
 
-        <div className="mx-auto max-w-7xl w-full flex items-center lg:h-full relative z-20"><div className="flex flex-col w-full lg:w-[70%] z-20">
+        <div className="mx-auto max-w-7xl w-full flex items-center lg:h-full relative z-20"><div className="flex flex-col w-full lg:w-[55%] xl:w-[70%] z-20">
           <div className="inline-flex items-center space-x-3 mb-8 px-4 py-2 border border-brand-void/10 rounded-full w-fit bg-brand-alabaster/50 backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-brand-solar animate-pulse"></span>
             <span className="font-heading uppercase font-bold tracking-[0.2em] text-[0.65rem] text-brand-void/60">
@@ -18,10 +18,10 @@ export default function Home() {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-[8rem] font-heading font-black uppercase tracking-tighter leading-[0.85] text-brand-void mb-4 md:mb-8 relative z-10 drop-shadow-sm">
+          <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[7rem] 2xl:text-[8rem] font-heading font-black uppercase tracking-tighter leading-[0.85] text-brand-void mb-4 md:mb-8 relative z-10 drop-shadow-sm">
             Oluwafemi <br />
             <span className="text-brand-void/20">Israel</span>
-            <span className="block text-3xl md:text-5xl lg:text-7xl mt-4 text-brand-solar">
+            <span className="block text-3xl md:text-5xl lg:text-6xl xl:text-7xl mt-4 text-brand-solar">
               ( Ọmọ Ọlọ́jọ́ )
             </span>
           </h1>
@@ -34,11 +34,11 @@ export default function Home() {
         </div>
 
         {/* Large Cut-out Hero Image */}
-        <div className="relative lg:absolute bottom-0 right-0 w-full flex justify-center lg:justify-end items-end z-10 pointer-events-none mt-12 sm:mt-16 lg:mt-0 lg:h-[85vh] lg:w-[65vw]">
+        <div className="relative lg:absolute bottom-0 right-0 w-full flex justify-center lg:justify-end items-end z-10 pointer-events-none mt-12 sm:mt-16 lg:mt-0 lg:h-[85vh] lg:w-[45vw] xl:w-[65vw]">
           <img
             src="/israel_hero_image.png"
             alt="Oluwafemi Israel"
-            className="w-[90%] max-w-md md:max-w-xl lg:max-w-none h-auto lg:h-full object-contain object-bottom lg:object-right-bottom origin-bottom lg:pr-24"
+            className="w-[90%] max-w-md md:max-w-xl lg:max-w-none h-auto lg:h-full object-contain object-bottom lg:object-right-bottom origin-bottom lg:pr-0 xl:pr-12 2xl:pr-24"
           />
         </div>
       </section>
@@ -108,7 +108,7 @@ export default function Home() {
               {/* Meta Details */}
               <div className="flex flex-col space-y-3 px-2 mt-2 w-full">
                 <div className="flex justify-between items-start gap-4 w-full">
-                  <h3 className="font-heading font-black text-2xl uppercase tracking-tighter text-brand-void group-hover:text-brand-dawn transition-colors">Metamaterial Integration</h3>
+                  <h3 className="font-heading font-black text-2xl uppercase tracking-tighter text-brand-void group-hover:text-brand-solar transition-colors">Metamaterial Integration</h3>
                   <span className="bg-brand-void/5 text-brand-void px-3 py-1 font-sans text-[0.65rem] font-bold rounded-full uppercase tracking-widest whitespace-nowrap">
                     Research
                   </span>
@@ -160,7 +160,7 @@ export default function Home() {
           <div className="flex flex-col group">
             <div className="relative w-full h-[400px] md:h-[500px] rounded-[2.5rem] bg-brand-void/10 overflow-hidden flex items-end justify-center mb-10 transition-all duration-700 ease-in-out">
               {/* Background ambient glow */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-brand-slate/30 to-transparent blur-[80px] rounded-full mix-blend-multiply opacity-50 group-hover:scale-110 group-hover:opacity-80 transition-all duration-700"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-brand-void/30 to-transparent blur-[80px] rounded-full mix-blend-multiply opacity-50 group-hover:scale-110 group-hover:opacity-80 transition-all duration-700"></div>
               {/* Bottom fade */}
               <div className="absolute inset-0 bg-gradient-to-t from-brand-void/20 via-brand-void/5 to-transparent z-10"></div>
 
@@ -172,7 +172,7 @@ export default function Home() {
 
               {/* Floating icon badge */}
               <div className="absolute top-6 left-6 z-30 w-12 h-12 rounded-2xl bg-white/90 backdrop-blur-md flex items-center justify-center shadow-lg border border-white/50">
-                <Zap className="w-5 h-5 text-brand-slate" />
+                <Zap className="w-5 h-5 text-brand-void" />
               </div>
             </div>
 
@@ -195,7 +195,7 @@ export default function Home() {
           <div className="flex flex-col group mt-12 lg:mt-32">
             <div className="relative w-full h-[400px] md:h-[500px] rounded-[2.5rem] bg-brand-solar/10 overflow-hidden flex items-end justify-center mb-10 transition-all duration-700 ease-in-out">
               {/* Background ambient glow */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-brand-solar/30 to-brand-dawn/10 blur-[80px] rounded-full mix-blend-multiply opacity-50 group-hover:scale-110 group-hover:opacity-80 transition-all duration-700"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-brand-solar/30 to-brand-solar/10 blur-[80px] rounded-full mix-blend-multiply opacity-50 group-hover:scale-110 group-hover:opacity-80 transition-all duration-700"></div>
               {/* Bottom fade */}
               <div className="absolute inset-0 bg-gradient-to-t from-brand-void/20 via-brand-void/5 to-transparent z-10"></div>
 
@@ -234,7 +234,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl w-full flex flex-col md:flex-row items-center gap-16">
           <div className="w-full md:w-1/3 flex justify-center">
             <div className="w-48 h-48 rounded-full border border-brand-solar/30 flex items-center justify-center animate-[spin_20s_linear_infinite] relative">
-              <div className="absolute inset-2 border border-brand-dawn/20 rounded-full border-dashed animate-[spin_30s_linear_infinite_reverse]"></div>
+              <div className="absolute inset-2 border border-brand-solar/20 rounded-full border-dashed animate-[spin_30s_linear_infinite_reverse]"></div>
               <BookOpen className="w-12 h-12 text-brand-solar animate-none" />
             </div>
           </div>
@@ -284,9 +284,9 @@ export default function Home() {
 
             {/* Pillar 2 */}
             <div className="group relative flex flex-col space-y-8 p-10 bg-white rounded-[2.5rem] overflow-hidden border border-brand-void/10 lg:mt-12">
-              <div className="absolute top-0 -left-12 w-64 h-64 bg-brand-dawn/5 rounded-full blur-[80px] group-hover:bg-brand-dawn/10 transition-colors duration-700 pointer-events-none"></div>
+              <div className="absolute top-0 -left-12 w-64 h-64 bg-brand-solar/5 rounded-full blur-[80px] group-hover:bg-brand-solar/10 transition-colors duration-700 pointer-events-none"></div>
               <div className="w-20 h-20 bg-gradient-to-br from-brand-void/10 to-transparent rounded-2xl flex items-center justify-center relative z-10 shadow-inner">
-                <Hexagon className="w-10 h-10 text-brand-void group-hover:text-brand-dawn transition-colors duration-500" strokeWidth={1.5} />
+                <Hexagon className="w-10 h-10 text-brand-void group-hover:text-brand-solar transition-colors duration-500" strokeWidth={1.5} />
               </div>
               <div className="space-y-4 relative z-10">
                 <h3 className="text-3xl font-heading font-black uppercase tracking-widest text-brand-void">Vision</h3>
@@ -298,9 +298,9 @@ export default function Home() {
 
             {/* Pillar 3 */}
             <div className="group relative flex flex-col space-y-8 p-10 bg-white rounded-[2.5rem] overflow-hidden border border-brand-void/10">
-              <div className="absolute -bottom-10 right-0 w-64 h-64 bg-brand-slate/5 rounded-full blur-[80px] group-hover:bg-brand-slate/10 transition-colors duration-700 pointer-events-none"></div>
+              <div className="absolute -bottom-10 right-0 w-64 h-64 bg-brand-void/5 rounded-full blur-[80px] group-hover:bg-brand-void/10 transition-colors duration-700 pointer-events-none"></div>
               <div className="w-20 h-20 bg-gradient-to-br from-brand-void/10 to-transparent rounded-2xl flex items-center justify-center relative z-10 shadow-inner">
-                <Zap className="w-10 h-10 text-brand-void group-hover:text-brand-slate transition-colors duration-500" strokeWidth={1.5} />
+                <Zap className="w-10 h-10 text-brand-void group-hover:text-brand-void transition-colors duration-500" strokeWidth={1.5} />
               </div>
               <div className="space-y-4 relative z-10">
                 <h3 className="text-3xl font-heading font-black uppercase tracking-widest text-brand-void">Innovation</h3>
@@ -317,6 +317,9 @@ export default function Home() {
     </div>
   );
 }
+
+
+
 
 
 

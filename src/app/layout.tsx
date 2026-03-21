@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Ọmọ Ọlọ́jọ́ | Hybrid Hub",
+  title: "á»Œmá» á»Œlá»Ìjá»Ì | Hybrid Hub",
   description: "Electrical Engineer, researcher, author, and creative.",
 };
 

@@ -29,8 +29,8 @@ export default function CreativePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
-              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-slate/10 transition-colors duration-500">
-                <div className="w-16 h-16 rounded-full bg-brand-slate text-white flex items-center justify-center shadow-sm">
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-void/10 transition-colors duration-500">
+                <div className="w-16 h-16 rounded-full bg-brand-void text-white flex items-center justify-center shadow-sm">
                   <Play className="w-6 h-6 fill-current ml-1" />
                 </div>
               </div>
@@ -55,8 +55,8 @@ export default function CreativePage() {
             </div>
 
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
-              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-dawn/10 transition-colors duration-500">
-                <div className="w-16 h-16 rounded-full bg-brand-dawn text-white flex items-center justify-center shadow-sm">
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-solar/10 transition-colors duration-500">
+                <div className="w-16 h-16 rounded-full bg-brand-solar text-white flex items-center justify-center shadow-sm">
                   <Play className="w-6 h-6 fill-current ml-1" />
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function CreativePage() {
                   <div className="w-12 h-12 rounded-full bg-brand-void/5 flex items-center justify-center text-brand-solar">
                     <BookOpen className="w-5 h-5" />
                   </div>
-                  <div className="w-12 h-12 rounded-full bg-brand-void/5 flex items-center justify-center text-brand-dawn">
+                  <div className="w-12 h-12 rounded-full bg-brand-void/5 flex items-center justify-center text-brand-solar">
                     <Sparkles className="w-5 h-5" />
                   </div>
                 </div>
@@ -149,9 +149,9 @@ export default function CreativePage() {
                  <img src="/ministry_image.png" alt="Life Prayer Protocol" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
                </div>
                <div className="p-10 flex flex-col gap-4">
-                 <Shield className="w-8 h-8 text-brand-dawn mb-2" />
+                 <Shield className="w-8 h-8 text-brand-solar mb-2" />
                  <h3 className="font-heading font-black text-3xl md:text-4xl uppercase tracking-tight leading-none text-brand-void">
-                   Life Prayer <br /> <span className="text-brand-dawn">Protocol</span>
+                   Life Prayer <br /> <span className="text-brand-solar">Protocol</span>
                  </h3>
                  <p className="font-sans text-brand-void/70 text-lg font-medium leading-relaxed max-w-sm mt-2">
                    Structured, intentional architecture for bringing heavenly realities into earthly manifestation.

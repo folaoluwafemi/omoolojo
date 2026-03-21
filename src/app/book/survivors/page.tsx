@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { ArrowLeft, Download, AlertTriangle } from 'lucide-react';
 
 export default function SurvivorsPage() {
@@ -10,7 +10,7 @@ export default function SurvivorsPage() {
         {/* Deep, gritty background gradients to signify struggle and emerging light */}
         <div className="absolute inset-0 bg-brand-alabaster z-0"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-solar/20 blur-[120px] rounded-full translate-x-1/3 -translate-y-1/3 z-0"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-dawn/20 blur-[150px] rounded-full -translate-x-1/3 translate-y-1/3 z-0"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-solar/20 blur-[150px] rounded-full -translate-x-1/3 translate-y-1/3 z-0"></div>
         
         {/* Grain overlay for gritty texture */}
         <div className="absolute inset-0 opacity-[0.03] mix-blend-multiply z-0" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }}></div>
@@ -30,7 +30,7 @@ export default function SurvivorsPage() {
             <div className="inline-flex items-center space-x-3 px-4 py-2 bg-brand-void/5 border border-brand-void/10 rounded-full w-fit">
               <span className="w-2 h-2 rounded-full bg-brand-solar animate-pulse"></span>
               <span className="font-heading uppercase font-bold tracking-[0.2em] text-[0.65rem] text-brand-void/80">
-                Official Literature Text (2014) • Akwa Ibom State
+                Official Literature Text (2014) â€¢ Akwa Ibom State
               </span>
             </div>
 
@@ -74,7 +74,7 @@ export default function SurvivorsPage() {
         <div className="mx-auto max-w-5xl w-full flex flex-col gap-12">
           
           <div className="flex flex-col items-center text-center space-y-6">
-            <AlertTriangle className="w-12 h-12 text-brand-dawn/80" />
+            <AlertTriangle className="w-12 h-12 text-brand-solar/80" />
             <h2 className="text-4xl md:text-5xl font-heading font-black uppercase tracking-tight text-brand-void">
               The Campaign Against Child Abuse
             </h2>
@@ -94,7 +94,7 @@ export default function SurvivorsPage() {
             </div>
             
             <div className="space-y-6">
-              <h3 className="text-xl font-heading font-black uppercase tracking-widest text-brand-dawn">
+              <h3 className="text-xl font-heading font-black uppercase tracking-widest text-brand-solar">
                 Educational Impact
               </h3>
               <p className="font-sans font-medium text-brand-void/80 leading-relaxed text-lg">
@@ -119,7 +119,7 @@ export default function SurvivorsPage() {
             &quot;We cannot look away from the silent wars waged at home. Survival is not just staying alive; it is finding the light when abandoned in the dark.&quot;
           </p>
           <cite className="font-sans font-black tracking-widest text-brand-solar uppercase text-sm not-italic">
-            — Ọmọ Ọlọ́jọ́
+            â€” á»Œmá» á»Œlá»Ìjá»Ì
           </cite>
         </blockquote>
       </section>

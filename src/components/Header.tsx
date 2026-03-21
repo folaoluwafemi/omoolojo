@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { Mail, Menu, X } from "lucide-react";
@@ -66,7 +66,7 @@ export default function Header() {
                   "font-heading text-xl font-black tracking-tighter uppercase transition-colors duration-300",
                   scrolled ? "text-brand-void group-hover:text-brand-solar" : "text-brand-void group-hover:text-brand-solar"
                 )}>
-                  Ọmọ Ọlọ́jọ́
+                  á»Œmá» á»Œlá»Ìjá»Ì
                 </span>
               </Link>
             </div>

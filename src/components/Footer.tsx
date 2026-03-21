@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ArrowUpRight, Mail, Linkedin } from "lucide-react";
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Brand & Hook */}
         <div className="md:col-span-6 flex flex-col items-start space-y-8">
           <span className="font-heading text-6xl md:text-8xl font-bold uppercase tracking-tighter leading-[0.8]">
-            Ọmọ <br /> Ọlọ́jọ́
+            á»Œmá» <br /> á»Œlá»Ìjá»Ì
           </span>
           <p className="font-sans text-xl font-light text-brand-alabaster/60 max-w-md leading-relaxed">
             A visionary architect of the technical and the theological. Building bridges between logic, faith, and societal innovation.
@@ -56,7 +56,7 @@ export default function Footer() {
       
       {/* Bottom Bar */}
       <div className="z-10 mx-auto max-w-7xl w-full flex flex-col md:flex-row justify-between items-center pt-8 border-t border-brand-alabaster/10 text-xs font-heading tracking-widest text-brand-alabaster/40 uppercase gap-4">
-        <p>© {new Date().getFullYear()} Omo Olojo Ltd. All rights reserved.</p>
+        <p>Â© {new Date().getFullYear()} Omo Olojo Ltd. All rights reserved.</p>
       </div>
 
     </footer>

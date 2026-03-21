@@ -7,7 +7,7 @@ export default function ResearchPage() {
         
         <header className="mb-20 md:mb-32 max-w-3xl">
           <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-heading font-black uppercase tracking-tighter leading-[0.85] text-brand-void mb-6">
-            Applied <br /> <span className="text-brand-dawn">Research</span>
+            Applied <br /> <span className="text-brand-solar">Research</span>
           </h1>
           <p className="text-xl font-sans text-brand-void/80 max-w-2xl font-medium leading-relaxed">
             Rigorously investigating circular microstrip antennas, metamaterial integration, and complex energy systems to solve real-world communication challenges.
@@ -25,11 +25,11 @@ export default function ResearchPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
-              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-dawn/5 transition-colors duration-500">
-                  <FileText className="w-10 h-10 text-brand-dawn" />
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-solar/5 transition-colors duration-500">
+                  <FileText className="w-10 h-10 text-brand-solar" />
               </div>
               <div className="flex flex-col gap-4 p-10">
-                <span className="bg-brand-dawn/10 text-brand-dawn px-3 py-1 font-sans text-[0.65rem] font-bold rounded-full uppercase tracking-widest w-fit">
+                <span className="bg-brand-solar/10 text-brand-solar px-3 py-1 font-sans text-[0.65rem] font-bold rounded-full uppercase tracking-widest w-fit">
                   AJERD (2024)
                 </span>
                 <h3 className="font-heading font-black text-2xl tracking-tight leading-snug">
@@ -39,11 +39,11 @@ export default function ResearchPage() {
             </div>
 
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
-              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-slate/5 transition-colors duration-500">
-                  <FileText className="w-10 h-10 text-brand-slate" />
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-void/5 transition-colors duration-500">
+                  <FileText className="w-10 h-10 text-brand-void" />
               </div>
               <div className="flex flex-col gap-4 p-10">
-                <span className="bg-brand-slate/10 text-brand-slate px-3 py-1 font-sans text-[0.65rem] font-bold rounded-full uppercase tracking-widest w-fit">
+                <span className="bg-brand-void/10 text-brand-void px-3 py-1 font-sans text-[0.65rem] font-bold rounded-full uppercase tracking-widest w-fit">
                   Manuscript
                 </span>
                 <h3 className="font-heading font-black text-2xl tracking-tight leading-snug">
@@ -93,8 +93,8 @@ export default function ResearchPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
-              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-dawn/5 transition-colors duration-500">
-                <Radio className="w-10 h-10 text-brand-dawn" />
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-solar/5 transition-colors duration-500">
+                <Radio className="w-10 h-10 text-brand-solar" />
               </div>
               <div className="flex flex-col gap-4 p-8">
                 <h3 className="font-heading font-black text-xl uppercase tracking-tight">Metamaterial/CMSA Antenna Design</h3>
@@ -105,8 +105,8 @@ export default function ResearchPage() {
             </div>
 
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
-              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-slate/5 transition-colors duration-500">
-                <Network className="w-10 h-10 text-brand-slate" />
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-void/5 transition-colors duration-500">
+                <Network className="w-10 h-10 text-brand-void" />
               </div>
               <div className="flex flex-col gap-4 p-8">
                 <h3 className="font-heading font-black text-xl uppercase tracking-tight">CP Remote Monitoring</h3>

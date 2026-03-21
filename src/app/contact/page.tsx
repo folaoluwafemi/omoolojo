@@ -1,4 +1,4 @@
-import { Mail, Linkedin, MapPin, ArrowUpRight } from "lucide-react";
+﻿import { Mail, Linkedin, MapPin, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -7,7 +7,7 @@ export default function ContactPage() {
       
       {/* Ambient background glows */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-solar/10 blur-[120px] rounded-full pointer-events-none mix-blend-multiply" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-brand-dawn/10 blur-[150px] rounded-full pointer-events-none mix-blend-multiply" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-brand-solar/10 blur-[150px] rounded-full pointer-events-none mix-blend-multiply" />
 
       <div className="mx-auto max-w-7xl w-full relative z-10">
         <header className="mb-20 md:mb-32">
@@ -49,10 +49,10 @@ export default function ContactPage() {
               className="group flex flex-col p-10 bg-white border border-brand-void/5 rounded-[2.5rem] hover:bg-brand-void/5 transition-colors duration-500"
             >
               <div className="flex items-start justify-between mb-8 cursor-pointer">
-                <div className="p-4 bg-brand-slate/10 rounded-full">
-                  <Linkedin className="w-8 h-8 text-brand-slate" />
+                <div className="p-4 bg-brand-void/10 rounded-full">
+                  <Linkedin className="w-8 h-8 text-brand-void" />
                 </div>
-                <ArrowUpRight className="w-6 h-6 text-brand-slate opacity-0 -translate-y-2 translate-x-2 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all duration-300" />
+                <ArrowUpRight className="w-6 h-6 text-brand-void opacity-0 -translate-y-2 translate-x-2 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all duration-300" />
               </div>
               <h3 className="font-heading font-black text-2xl uppercase tracking-tighter text-brand-void mb-2">
                 Professional Network

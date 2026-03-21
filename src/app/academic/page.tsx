@@ -7,7 +7,7 @@ export default function AcademicPage() {
         
         <header className="mb-20 md:mb-32 max-w-3xl">
           <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-heading font-black uppercase tracking-tighter leading-[0.85] text-brand-void mb-6">
-            Academic <br /> <span className="text-brand-dawn">Mentorship</span>
+            Academic <br /> <span className="text-brand-solar">Mentorship</span>
           </h1>
           <p className="text-xl font-sans text-brand-void/80 max-w-2xl font-medium leading-relaxed">
             Distilling complex engineering concepts into accessible structures. A portfolio of tutoring, teaching, and technical editing.
@@ -25,8 +25,8 @@ export default function AcademicPage() {
 
           <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
-              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-slate/5 transition-colors duration-500">
-                <Lightbulb className="w-10 h-10 text-brand-slate" />
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-void/5 transition-colors duration-500">
+                <Lightbulb className="w-10 h-10 text-brand-void" />
               </div>
               <div className="flex flex-col gap-4 p-10">
                <h3 className="font-heading font-black text-2xl uppercase tracking-tight">Curriculum & Course Materials</h3>
@@ -71,8 +71,8 @@ export default function AcademicPage() {
             </div>
 
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
-               <div className="h-56 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-dawn/10 transition-colors duration-500">
-                 <Shield className="w-10 h-10 text-brand-dawn" />
+               <div className="h-56 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-solar/10 transition-colors duration-500">
+                 <Shield className="w-10 h-10 text-brand-solar" />
                </div>
                <div className="p-8">
                  <h3 className="font-heading font-black text-xl uppercase tracking-tighter">Analogue Electronics</h3>
@@ -81,8 +81,8 @@ export default function AcademicPage() {
             </div>
 
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
-               <div className="h-56 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-slate/10 transition-colors duration-500">
-                 <GraduationCap className="w-10 h-10 text-brand-slate" />
+               <div className="h-56 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-void/10 transition-colors duration-500">
+                 <GraduationCap className="w-10 h-10 text-brand-void" />
                </div>
                <div className="p-8">
                  <h3 className="font-heading font-black text-xl uppercase tracking-tighter">Measurement & Control</h3>
