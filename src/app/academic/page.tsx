@@ -23,7 +23,7 @@ export default function AcademicPage() {
             <div className="flex-1 h-[1px] bg-brand-void/10 ml-4"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
               <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-slate/5 transition-colors duration-500">
                 <Lightbulb className="w-10 h-10 text-brand-slate" />
@@ -59,7 +59,7 @@ export default function AcademicPage() {
             <div className="flex-1 h-[1px] bg-brand-void/10 ml-4"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6">
             <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
                <div className="h-56 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-solar/10 transition-colors duration-500">
                  <Lightbulb className="w-10 h-10 text-brand-solar" />
@@ -106,4 +106,5 @@ export default function AcademicPage() {
     </div>
   );
 }
+
 
