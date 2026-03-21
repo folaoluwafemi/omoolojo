@@ -53,17 +53,17 @@ export default function Home() {
             
             {/* Item 1: Book -> mapped to Survivors internally */}
             <Link href="/book/survivors" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
+               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-void/50 to-transparent z-0"></div>
                   
-                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-6 left-6">
+                  <span className="font-heading font-bold text-white uppercase tracking-widest text-xs z-10 absolute top-6 left-6 drop-shadow-md">
                     01 // Bestseller
                   </span>
 
-                  <img src="https://files.selar.co/product-images/2025/products/%E1%BB%8Cm%E1%BB%8D_Olojo/the-survivors-selar.com-68cee18849f88.jpg" alt="The Survivors" className="absolute inset-0 w-full h-full object-cover -z-10" />
+                  <img src="https://files.selar.co/product-images/2025/products/%E1%BB%8Cm%E1%BB%8D_Olojo/the-survivors-selar.com-68cee18849f88.jpg" alt="The Survivors" className="absolute inset-0 w-full h-full object-cover -z-10 group-hover:scale-105 transition-transform duration-700" />
                   
                   {/* Arrow overlay */}
-                  <div className="absolute top-6 right-6 w-12 h-12 bg-brand-alabaster/90 backdrop-blur-md rounded-full flex items-center justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20">
+                  <div className="absolute top-6 right-6 w-12 h-12 bg-white backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-brand-void/5 z-20 transition-transform duration-300 group-hover:scale-110">
                     <ArrowRight className="w-5 h-5 text-brand-void" />
                   </div>
                </div>
@@ -84,17 +84,17 @@ export default function Home() {
 
             {/* Item 2: Latest Research Paper */}
             <Link href="/resources" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-center items-center p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
-                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-6 left-6">
+               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/50 to-transparent z-0"></div>
+
+                  <span className="font-heading font-bold text-white uppercase tracking-widest text-xs z-10 absolute top-6 left-6 drop-shadow-md">
                     02 // Latest Paper
                   </span>
 
-                  <span className="font-heading text-brand-void/40 uppercase tracking-widest text-[0.65rem] z-10 text-center opacity-40">
-                    [ THUMBNAIL PLACEHOLDER ]
-                  </span>
+                  <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80" alt="Research Paper" className="absolute inset-0 w-full h-full object-cover -z-10 group-hover:scale-105 transition-transform duration-700" />
 
                   {/* Arrow overlay */}
-                  <div className="absolute top-6 right-6 w-12 h-12 bg-brand-alabaster/90 backdrop-blur-md rounded-full flex items-center justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 shadow-sm border border-brand-void/5">
+                  <div className="absolute top-6 right-6 w-12 h-12 bg-white backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-brand-void/5 z-20 transition-transform duration-300 group-hover:scale-110">
                     <ArrowRight className="w-5 h-5 text-brand-void" />
                   </div>
                </div>
@@ -115,17 +115,17 @@ export default function Home() {
 
             {/* Item 3: New Music Release */}
             <Link href="/creative" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-center items-center p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
-                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-6 left-6">
+               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/50 to-transparent z-0"></div>
+
+                  <span className="font-heading font-bold text-white uppercase tracking-widest text-xs z-10 absolute top-6 left-6 drop-shadow-md">
                     03 // New Release
                   </span>
 
-                  <span className="font-heading text-brand-void/40 uppercase tracking-widest text-[0.65rem] z-10 text-center opacity-40">
-                    [ ARTWORK PLACEHOLDER ]
-                  </span>
+                  <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80" alt="Music Audio" className="absolute inset-0 w-full h-full object-cover -z-10 group-hover:scale-105 transition-transform duration-700" />
 
                   {/* Arrow overlay */}
-                  <div className="absolute top-6 right-6 w-12 h-12 bg-brand-alabaster/90 backdrop-blur-md rounded-full flex items-center justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 shadow-sm border border-brand-void/5">
+                  <div className="absolute top-6 right-6 w-12 h-12 bg-white backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-brand-void/5 z-20 transition-transform duration-300 group-hover:scale-110">
                     <ArrowRight className="w-5 h-5 text-brand-void" />
                   </div>
                </div>
