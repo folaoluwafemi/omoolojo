@@ -34,7 +34,7 @@ export default function Home() {
       </section>
 
       {/* 2. THE SHOWCASE SECTION */}
-      <section className="relative min-h-[100vh] w-full flex flex-col pt-32 pb-24 lg:pt-0 overflow-hidden bg-brand-alabaster text-brand-void">
+      <section className="relative w-full flex flex-col py-32 lg:py-48 mt-12 bg-brand-alabaster text-brand-void overflow-visible">
         <div className="mx-auto max-w-7xl w-full h-full flex flex-col justify-center px-4 sm:px-6 lg:px-8">
           
           <div className="flex justify-between items-end mb-16">
@@ -49,78 +49,97 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
             
             {/* Item 1: Book -> mapped to Survivors internally */}
             <Link href="/book/survivors" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.15)]">
+               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-void/50 to-transparent z-0"></div>
                   
-                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
+                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-6 left-6">
                     01 // Bestseller
                   </span>
-                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-solar/20 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-solar/40 transition-all z-0"></div>
-                  <ArrowRight className="absolute top-8 right-8 w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-solar z-10" />
 
                   <img src="https://files.selar.co/product-images/2025/products/%E1%BB%8Cm%E1%BB%8D_Olojo/the-survivors-selar.com-68cee18849f88.jpg" alt="The Survivors" className="absolute inset-0 w-full h-full object-cover -z-10" />
                   
-                  <h3 className="font-heading font-black text-2xl md:text-3xl uppercase tracking-tighter text-brand-alabaster z-10 mt-2 pr-4 group-hover:text-brand-solar transition-colors">
-                    The Survivors
-                  </h3>
+                  {/* Arrow overlay */}
+                  <div className="absolute top-6 right-6 w-12 h-12 bg-brand-alabaster/90 backdrop-blur-md rounded-full flex items-center justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20">
+                    <ArrowRight className="w-5 h-5 text-brand-void" />
+                  </div>
                </div>
-               <div className="px-2">
-                 <p className="font-sans font-medium text-brand-void/80 text-sm leading-relaxed">
-                    A tale of family, faith, and the silent wars at home.
+
+               {/* Meta Details */}
+               <div className="flex flex-col space-y-3 px-2 mt-2 w-full">
+                 <div className="flex justify-between items-start gap-4 w-full">
+                    <h3 className="font-heading font-black text-2xl uppercase tracking-tighter text-brand-void group-hover:text-brand-solar transition-colors">The Survivors</h3>
+                    <span className="bg-brand-void/5 text-brand-void px-3 py-1 font-sans text-[0.65rem] font-bold rounded-full uppercase tracking-widest whitespace-nowrap">
+                       Book
+                    </span>
+                 </div>
+                 <p className="font-sans text-brand-void/80 font-medium leading-relaxed text-sm md:text-base pr-4">
+                   A tale of family, faith, and the silent wars at home.
                  </p>
                </div>
             </Link>
 
             {/* Item 2: Latest Research Paper */}
             <Link href="/resources" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.15)]">
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/30 to-transparent z-0"></div>
-                  
-                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
+               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-center items-center p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
+                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-6 left-6">
                     02 // Latest Paper
                   </span>
-                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-dawn/20 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-dawn/40 transition-all z-0"></div>
-                  <ArrowRight className="absolute top-8 right-8 w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-dawn z-10" />
 
-                  <span className="font-heading text-brand-void/40 uppercase tracking-widest text-[0.65rem] z-10">
+                  <span className="font-heading text-brand-void/40 uppercase tracking-widest text-[0.65rem] z-10 text-center opacity-40">
                     [ THUMBNAIL PLACEHOLDER ]
                   </span>
-                  <h3 className="font-heading font-black text-2xl md:text-3xl uppercase tracking-tighter text-brand-void z-10 mt-2 pr-4 group-hover:text-brand-dawn transition-colors">
-                    Metamaterial Integration
-                  </h3>
+
+                  {/* Arrow overlay */}
+                  <div className="absolute top-6 right-6 w-12 h-12 bg-brand-alabaster/90 backdrop-blur-md rounded-full flex items-center justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 shadow-sm border border-brand-void/5">
+                    <ArrowRight className="w-5 h-5 text-brand-void" />
+                  </div>
                </div>
-               <div className="px-2">
-                 <p className="font-sans font-medium text-brand-void/80 text-sm leading-relaxed">
-                    Theoretical design and practical execution for ultra-wideband modern 5G communication.
+
+               {/* Meta Details */}
+               <div className="flex flex-col space-y-3 px-2 mt-2 w-full">
+                 <div className="flex justify-between items-start gap-4 w-full">
+                    <h3 className="font-heading font-black text-2xl uppercase tracking-tighter text-brand-void group-hover:text-brand-dawn transition-colors">Metamaterial Integration</h3>
+                    <span className="bg-brand-void/5 text-brand-void px-3 py-1 font-sans text-[0.65rem] font-bold rounded-full uppercase tracking-widest whitespace-nowrap">
+                       Research
+                    </span>
+                 </div>
+                 <p className="font-sans text-brand-void/80 font-medium leading-relaxed text-sm md:text-base pr-4">
+                   Theoretical design and practical execution for ultra-wideband modern 5G communication.
                  </p>
                </div>
             </Link>
 
             {/* Item 3: New Music Release */}
             <Link href="/creative" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[3/4] rounded-[2.5rem] bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.15)]">
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/30 to-transparent z-0"></div>
-                  
-                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-8 left-8">
+               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-center items-center p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
+                  <span className="font-heading font-bold text-brand-void/50 uppercase tracking-widest text-xs z-10 absolute top-6 left-6">
                     03 // New Release
                   </span>
-                  <div className="absolute top-8 right-8 w-32 h-32 bg-brand-slate/20 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full group-hover:bg-brand-slate/40 transition-all z-0"></div>
-                  <ArrowRight className="absolute top-8 right-8 w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-brand-void z-10" />
 
-                  <span className="font-heading text-brand-void/40 uppercase tracking-widest text-[0.65rem] z-10">
+                  <span className="font-heading text-brand-void/40 uppercase tracking-widest text-[0.65rem] z-10 text-center opacity-40">
                     [ ARTWORK PLACEHOLDER ]
                   </span>
-                  <h3 className="font-heading font-black text-2xl md:text-3xl uppercase tracking-tighter text-brand-void z-10 mt-2 pr-4 transition-colors">
-                    Hallelujah! Jesus Reigns
-                  </h3>
+
+                  {/* Arrow overlay */}
+                  <div className="absolute top-6 right-6 w-12 h-12 bg-brand-alabaster/90 backdrop-blur-md rounded-full flex items-center justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 shadow-sm border border-brand-void/5">
+                    <ArrowRight className="w-5 h-5 text-brand-void" />
+                  </div>
                </div>
-               <div className="px-2">
-                 <p className="font-sans font-medium text-brand-void/80 text-sm leading-relaxed">
-                    A pure worship and afro-fusion sonic experience. Available on all major platforms.
+
+               {/* Meta Details */}
+               <div className="flex flex-col space-y-3 px-2 mt-2 w-full">
+                 <div className="flex justify-between items-start gap-4 w-full">
+                    <h3 className="font-heading font-black text-2xl uppercase tracking-tighter text-brand-void group-hover:text-brand-void/70 transition-colors">Hallelujah! Jesus Reigns</h3>
+                    <span className="bg-brand-void/5 text-brand-void px-3 py-1 font-sans text-[0.65rem] font-bold rounded-full uppercase tracking-widest whitespace-nowrap">
+                       Music
+                    </span>
+                 </div>
+                 <p className="font-sans text-brand-void/80 font-medium leading-relaxed text-sm md:text-base pr-4">
+                   A pure worship and afro-fusion sonic experience. Available on all major platforms.
                  </p>
                </div>
             </Link>
