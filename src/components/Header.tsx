@@ -47,10 +47,10 @@ export default function Header() {
       <header 
         className={cn(
           "fixed top-0 z-50 w-full transition-all duration-700 ease-in-out font-sans",
-          scrolled ? "py-4" : "py-6"
+          scrolled ? "py-4 lg:px-12" : "py-6 lg:px-12"
         )}
       >
-        <div className="mx-auto px-4 max-w-7xl flex justify-center">
+        <div className="mx-auto px-4 lg:px-8 max-w-7xl flex justify-center">
           <div className={cn(
             "w-full flex items-center justify-between transition-all duration-700 ease-in-out relative overflow-hidden",
             scrolled ? "bg-white/90 backdrop-blur-xl rounded-2xl py-3 px-6 text-brand-void" : "bg-transparent py-2 text-brand-void" )}>
