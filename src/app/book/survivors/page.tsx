@@ -86,7 +86,7 @@ export default function SurvivorsPage() {
                 Contextual Details
               </h3>
               <p className="font-sans font-medium text-brand-void/80 leading-relaxed text-lg">
-                The campaign against child abuse was a pivotal part of the Akwa Ibom State government's broader response to international and domestic scrutiny regarding "child witches" and widespread child abandonment.
+                The campaign against child abuse was a pivotal part of the Akwa Ibom State government&apos;s broader response to international and domestic scrutiny regarding &quot;child witches&quot; and widespread child abandonment.
               </p>
               <p className="font-sans font-medium text-brand-void/80 leading-relaxed text-lg">
                 While the administration, led by Governor Godswill Akpabio, initiated legal action and child protection initiatives, serious concerns were raised about the enforcement of these laws and the welfare of children trapped in stigmatizing situations.
@@ -98,7 +98,7 @@ export default function SurvivorsPage() {
                 Educational Impact
               </h3>
               <p className="font-sans font-medium text-brand-void/80 leading-relaxed text-lg">
-                Spearheaded by Her Excellency Mrs. Ekaette Unoma Akpabio's campaign, <span className="font-bold text-brand-void italic">The Survivors</span> explores this exact storyline. It dives deep into the horrific abandonment tied to the "child witch" stigma.
+                Spearheaded by Her Excellency Mrs. Ekaette Unoma Akpabio&apos;s campaign, <span className="font-bold text-brand-void italic">The Survivors</span> explores this exact storyline. It dives deep into the horrific abandonment tied to the &quot;child witch&quot; stigma.
               </p>
               <div className="p-6 bg-brand-solar/10 border-l-4 border-brand-solar mt-4">
                 <p className="font-sans font-semibold text-brand-void text-lg">
@@ -116,7 +116,7 @@ export default function SurvivorsPage() {
         <div className="w-[2px] h-24 bg-gradient-to-b from-transparent to-brand-solar mb-12"></div>
         <blockquote className="max-w-4xl">
           <p className="font-heading font-medium text-3xl md:text-5xl uppercase tracking-tight leading-tight text-brand-void mb-8">
-            "We cannot look away from the silent wars waged at home. Survival is not just staying alive; it is finding the light when abandoned in the dark."
+            &quot;We cannot look away from the silent wars waged at home. Survival is not just staying alive; it is finding the light when abandoned in the dark.&quot;
           </p>
           <cite className="font-sans font-black tracking-widest text-brand-solar uppercase text-sm not-italic">
             — Ọmọ Ọlọ́jọ́
