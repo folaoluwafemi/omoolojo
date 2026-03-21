@@ -1,0 +1,10 @@
+const fs = require('fs');
+let text = fs.readFileSync('src/app/page.tsx', 'utf8');
+text = text.replace(/hover:shadow-\[0_20px_40px_-15px_rgba\(0,0,0,0\.15\)\]/g, 'border border-brand-void/10');
+text = text.replace(/rounded-2xl/g, 'rounded-[2rem]');
+text = text.replace(/<div className="absolute inset-0 bg-gradient-to-t from-brand-void\\/50 to-transparent z-0"><\\/div>/g, '');
+text = text.replace(/<span className="font-heading font-bold text-white uppercase tracking-widest text-xs z-10 absolute top-6 left-6 drop-shadow-md">[\\s\\S]*?<\\/span>/g, '');
+text = text.replace(/className="absolute inset-0 w-full h-full object-cover -z-10/g, 'className="absolute inset-0 w-full h-full object-cover');
+text = text.replace(/flex flex-col justify-end p-8 overflow-hidden/g, 'overflow-hidden');
+text = text.replace(/absolute top-6 right-6 w-12 h-12/g, 'absolute top-4 right-4 w-10 h-10');
+fs.writeFileSync('src/app/page.tsx', text);

@@ -1,4 +1,4 @@
-import { Play, Disc3, Mic2, Sparkles, BookOpen, Flame, Shield } from "lucide-react";
+﻿import { Play, Disc3, Mic2, Sparkles, BookOpen, Flame, Shield } from "lucide-react";
 
 export default function CreativePage() {
   return (
@@ -28,31 +28,43 @@ export default function CreativePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group relative flex flex-col p-8 bg-white border border-brand-void/5 hover:bg-brand-void/5 transition-colors duration-500 overflow-hidden rounded-[2rem]">
-              <div className="w-16 h-16 rounded-full bg-brand-void/5 flex items-center justify-center mb-6 group-hover:bg-brand-slate transition-colors">
-                <Play className="w-6 h-6 text-brand-void group-hover:text-white fill-current ml-1" />
+            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-slate/10 transition-colors duration-500">
+                <div className="w-16 h-16 rounded-full bg-brand-slate text-white flex items-center justify-center shadow-sm">
+                  <Play className="w-6 h-6 fill-current ml-1" />
+                </div>
               </div>
-              <h3 className="font-heading font-black text-2xl tracking-tight mb-2">Hallelujah! Jesus Reigns Forever</h3>
-              <p className="font-sans text-brand-void/50 text-sm uppercase tracking-widest font-bold mb-4">Worship / Choral</p>
-              <p className="font-sans text-brand-void/70 font-medium">A massive, atmospheric worship anthem declaring eternal truths over cinematic instrumentation.</p>
+              <div className="flex flex-col gap-2 p-8">
+                <p className="font-sans text-brand-void/50 text-xs uppercase tracking-widest font-bold">Worship / Choral</p>
+                <h3 className="font-heading font-black text-2xl tracking-tight leading-snug">Hallelujah! Jesus Reigns Forever</h3>
+                <p className="font-sans text-brand-void/70 font-medium mt-2 leading-relaxed">A massive, atmospheric worship anthem declaring eternal truths over cinematic instrumentation.</p>
+              </div>
             </div>
 
-            <div className="group relative flex flex-col p-8 bg-white border border-brand-void/5 hover:bg-brand-void/5 transition-colors duration-500 overflow-hidden rounded-[2rem]">
-              <div className="w-16 h-16 rounded-full bg-brand-void/5 flex items-center justify-center mb-6 group-hover:bg-brand-solar transition-colors">
-                <Play className="w-6 h-6 text-brand-void group-hover:text-white fill-current ml-1" />
+            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-solar/10 transition-colors duration-500">
+                <div className="w-16 h-16 rounded-full bg-brand-solar text-brand-void flex items-center justify-center shadow-sm">
+                  <Play className="w-6 h-6 fill-current ml-1" />
+                </div>
               </div>
-              <h3 className="font-heading font-black text-2xl tracking-tight mb-2">Who Be You?</h3>
-              <p className="font-sans text-brand-void/50 text-sm uppercase tracking-widest font-bold mb-4">Afro-Fusion</p>
-              <p className="font-sans text-brand-void/70 font-medium">A groovy, deeply rhythmic exploration of identity, layered over rich percussive afro-soul beats.</p>
+              <div className="flex flex-col gap-2 p-8">
+                <p className="font-sans text-brand-void/50 text-xs uppercase tracking-widest font-bold">Afro-Fusion</p>
+                <h3 className="font-heading font-black text-2xl tracking-tight leading-snug">Who Be You?</h3>
+                <p className="font-sans text-brand-void/70 font-medium mt-2 leading-relaxed">A groovy, deeply rhythmic exploration of identity, layered over rich percussive afro-soul beats.</p>
+              </div>
             </div>
 
-            <div className="group relative flex flex-col p-8 bg-white border border-brand-void/5 hover:bg-brand-void/5 transition-colors duration-500 overflow-hidden rounded-[2rem]">
-               <div className="w-16 h-16 rounded-full bg-brand-void/5 flex items-center justify-center mb-6 group-hover:bg-brand-dawn transition-colors">
-                <Play className="w-6 h-6 text-brand-void group-hover:text-white fill-current ml-1" />
+            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-dawn/10 transition-colors duration-500">
+                <div className="w-16 h-16 rounded-full bg-brand-dawn text-white flex items-center justify-center shadow-sm">
+                  <Play className="w-6 h-6 fill-current ml-1" />
+                </div>
               </div>
-              <h3 className="font-heading font-black text-2xl tracking-tight mb-2">My Home Above</h3>
-              <p className="font-sans text-brand-void/50 text-sm uppercase tracking-widest font-bold mb-4">Soulful Ballad</p>
-              <p className="font-sans text-brand-void/70 font-medium">An introspective, stripped-back vocal performance reflecting on the journey of the soul and eternal rest.</p>
+              <div className="flex flex-col gap-2 p-8">
+                <p className="font-sans text-brand-void/50 text-xs uppercase tracking-widest font-bold">Soulful Ballad</p>
+                <h3 className="font-heading font-black text-2xl tracking-tight leading-snug">My Home Above</h3>
+                <p className="font-sans text-brand-void/70 font-medium mt-2 leading-relaxed">An introspective, stripped-back vocal performance reflecting on the journey of the soul and eternal rest.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -67,34 +79,42 @@ export default function CreativePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex flex-col space-y-6 p-10 bg-brand-solar text-brand-void rounded-[2.5rem] shadow-xl shadow-brand-solar/20">
-              <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-full bg-brand-void/10 flex items-center justify-center">
-                  <Mic2 className="w-5 h-5" />
-                </div>
-                <div className="w-12 h-12 rounded-full bg-brand-void/10 flex items-center justify-center">
-                  <Disc3 className="w-5 h-5" />
+            <div className="flex flex-col bg-white text-brand-void rounded-3xl overflow-hidden group border border-brand-void/10">
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-solar/10 transition-colors duration-500">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-brand-void/5 flex items-center justify-center text-brand-solar">
+                    <Mic2 className="w-5 h-5" />
+                  </div>
+                  <div className="w-12 h-12 rounded-full bg-brand-void/5 flex items-center justify-center text-brand-solar">
+                    <Disc3 className="w-5 h-5" />
+                  </div>
                 </div>
               </div>
-              <h3 className="font-heading font-black text-3xl uppercase tracking-tight">Music Production & Collaboration</h3>
-              <p className="font-sans text-brand-void/80 font-medium leading-relaxed text-lg">
-                I actively collaborate on songwriting, vocal features, and soundtrack briefs. If you have a project, share your reference tracks, concepts, and deadlines. Further expertise extends to mixing, mastering, and the final packaging of musical releases.
-              </p>
+              <div className="flex flex-col space-y-4 p-10">
+                <h3 className="font-heading font-black text-3xl uppercase tracking-tight">Music Production & Collaboration</h3>
+                <p className="font-sans text-brand-void/70 font-medium leading-relaxed text-lg">
+                  I actively collaborate on songwriting, vocal features, and soundtrack briefs. If you have a project, share your reference tracks, concepts, and deadlines. Further expertise extends to mixing, mastering, and the final packaging of musical releases.
+                </p>
+              </div>
             </div>
 
-            <div className="flex flex-col space-y-6 p-10 bg-white border border-brand-void/10 rounded-[2.5rem]">
-              <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-full bg-brand-void/5 flex items-center justify-center text-brand-solar">
-                  <BookOpen className="w-5 h-5" />
-                </div>
-                <div className="w-12 h-12 rounded-full bg-brand-void/5 flex items-center justify-center text-brand-dawn">
-                  <Sparkles className="w-5 h-5" />
+            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
+              <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-void/10 transition-colors duration-500">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-brand-void/5 flex items-center justify-center text-brand-solar">
+                    <BookOpen className="w-5 h-5" />
+                  </div>
+                  <div className="w-12 h-12 rounded-full bg-brand-void/5 flex items-center justify-center text-brand-dawn">
+                    <Sparkles className="w-5 h-5" />
+                  </div>
                 </div>
               </div>
-              <h3 className="font-heading font-black text-3xl uppercase tracking-tight">Publishing Support</h3>
-              <p className="font-sans text-brand-void/70 font-medium leading-relaxed text-lg">
-                For aspiring authors—I provide end-to-end publishing infrastructure. From setting up optimized Amazon KDP and Selar storefronts, designing covers and writing compelling blurbs, to generating robust launch assets for your book marketing campaigns.
-              </p>
+              <div className="flex flex-col space-y-4 p-10">
+                <h3 className="font-heading font-black text-3xl uppercase tracking-tight">Publishing Support</h3>
+                <p className="font-sans text-brand-void/70 font-medium leading-relaxed text-lg">
+                  For aspiring authorsâ€”I provide end-to-end publishing infrastructure. From setting up optimized Amazon KDP and Selar storefronts, designing covers and writing compelling blurbs, to generating robust launch assets for your book marketing campaigns.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -109,10 +129,11 @@ export default function CreativePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="relative overflow-hidden flex flex-col justify-end p-10 min-h-[400px] rounded-[2.5rem] bg-brand-void/5 text-brand-void group border border-brand-void/10">
-               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1438283173091-5dbf5c5a3206?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 group-hover:scale-105 transition-transform duration-1000 mix-blend-luminosity"></div>
-               <div className="absolute inset-0 bg-gradient-to-t from-brand-alabaster via-brand-alabaster/80 to-transparent"></div>
-               <div className="relative z-10 flex flex-col gap-4">
+            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
+               <div className="h-80 relative overflow-hidden bg-brand-void/5">
+                 <img src="https://images.unsplash.com/photo-1438283173091-5dbf5c5a3206?auto=format&fit=crop&q=80" alt="Dynamic Silence" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+               </div>
+               <div className="p-10 flex flex-col gap-4">
                  <Flame className="w-8 h-8 text-brand-solar mb-2" />
                  <h3 className="font-heading font-black text-3xl md:text-4xl uppercase tracking-tight leading-none text-brand-void">
                    Dynamic Silence <br /> <span className="text-brand-solar">On The Supernatural Battlefield</span>
@@ -123,10 +144,11 @@ export default function CreativePage() {
                </div>
             </div>
 
-            <div className="relative overflow-hidden flex flex-col justify-end p-10 min-h-[400px] rounded-[2.5rem] bg-brand-void/5 text-brand-void group border border-brand-void/10">
-               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507693527203-d14457313bf9?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 group-hover:scale-105 transition-transform duration-1000 mix-blend-luminosity"></div>
-               <div className="absolute inset-0 bg-gradient-to-t from-brand-alabaster via-brand-alabaster/80 to-transparent"></div>
-               <div className="relative z-10 flex flex-col gap-4">
+            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group">
+               <div className="h-80 relative overflow-hidden bg-brand-void/5">
+                 <img src="/ministry_image.png" alt="Life Prayer Protocol" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+               </div>
+               <div className="p-10 flex flex-col gap-4">
                  <Shield className="w-8 h-8 text-brand-dawn mb-2" />
                  <h3 className="font-heading font-black text-3xl md:text-4xl uppercase tracking-tight leading-none text-brand-void">
                    Life Prayer <br /> <span className="text-brand-dawn">Protocol</span>
@@ -143,3 +165,4 @@ export default function CreativePage() {
     </div>
   );
 }
+

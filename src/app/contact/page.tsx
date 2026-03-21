@@ -26,7 +26,7 @@ export default function ContactPage() {
             
             <a 
               href="mailto:iaoluwafemi@gmail.com" 
-              className="group flex flex-col p-10 bg-white border border-brand-void/5 rounded-[2.5rem] hover:bg-brand-void/5 transition-colors duration-500 shadow-sm"
+              className="group flex flex-col p-10 bg-white border border-brand-void/5 rounded-[2.5rem] hover:bg-brand-void/5 transition-colors duration-500"
             >
               <div className="flex items-start justify-between mb-8 cursor-pointer">
                 <div className="p-4 bg-brand-solar/10 rounded-full">
@@ -46,7 +46,7 @@ export default function ContactPage() {
               href="https://www.linkedin.com/in/israeladeolu/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col p-10 bg-white border border-brand-void/5 rounded-[2.5rem] hover:bg-brand-void/5 transition-colors duration-500 shadow-sm"
+              className="group flex flex-col p-10 bg-white border border-brand-void/5 rounded-[2.5rem] hover:bg-brand-void/5 transition-colors duration-500"
             >
               <div className="flex items-start justify-between mb-8 cursor-pointer">
                 <div className="p-4 bg-brand-slate/10 rounded-full">
@@ -65,7 +65,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form / Info card */}
-          <div className="flex flex-col justify-between p-12 bg-white text-brand-void outline outline-1 outline-brand-void/5 rounded-[2.5rem] max-w-xl self-start shadow-xl shadow-brand-void/5">
+          <div className="flex flex-col justify-between p-12 bg-white text-brand-void outline outline-1 outline-brand-void/5 rounded-[2.5rem] max-w-xl self-start">
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-6">
                 <MapPin className="text-brand-solar w-6 h-6" />

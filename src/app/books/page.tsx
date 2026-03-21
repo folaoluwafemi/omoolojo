@@ -21,7 +21,7 @@ export default function BooksPage() {
              return (
               <Link key={book.id} href={href} target={target} className="group flex flex-col items-start gap-4 border-0">
                  {/* Cover Image Wrapper */}
-                 <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
+                 <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500">
                     {book.coverUrl ? (
                       <img src={book.coverUrl} alt={book.title} className="absolute inset-0 w-full h-full object-cover" />
                     ) : (

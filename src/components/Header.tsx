@@ -7,10 +7,11 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { href: "/research", label: "Research" },
+  
   { href: "/books", label: "Books" },
   { href: "/creative", label: "Creative" },
   { href: "/academic", label: "Academic" },
+  { href: "/research", label: "Research" },
 ];
 
 export default function Header() {
@@ -52,11 +53,7 @@ export default function Header() {
         <div className="mx-auto px-4 max-w-7xl flex justify-center">
           <div className={cn(
             "w-full flex items-center justify-between transition-all duration-700 ease-in-out relative overflow-hidden",
-            scrolled 
-              ? "bg-white/90 backdrop-blur-xl rounded-2xl shadow-2xl border border-brand-void/10 py-3 px-6 text-brand-void"
-              : "bg-transparent py-4 px-2 text-brand-void"
-          )}>
-            
+            scrolled ? "bg-white/90 backdrop-blur-xl rounded-2xl py-3 px-6 text-brand-void" : "bg-transparent py-2 text-brand-void" )}>
             {/* Subtle glow effect when scrolled */}
             {scrolled && (
               <div className="absolute top-[-50%] left-[-10%] w-[200px] h-[200px] bg-brand-solar/20 blur-[60px] rounded-full z-0 pointer-events-none"></div>
@@ -160,3 +157,4 @@ export default function Header() {
     </>
   );
 }
+

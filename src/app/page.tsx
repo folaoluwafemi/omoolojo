@@ -64,18 +64,16 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
             
             {/* Item 1: Book -> mapped to Survivors internally */}
-            <Link href="/book/survivors" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/50 to-transparent z-0"></div>
+            <Link href="/book/survivors" className="group flex flex-col items-start gap-6 border-0">
+               <div className="relative w-full aspect-[4/5] rounded-3xl bg-brand-void/5 overflow-hidden border border-brand-void/5">
                   
-                  <span className="font-heading font-bold text-white uppercase tracking-widest text-xs z-10 absolute top-6 left-6 drop-shadow-md">
-                    01 // Bestseller
-                  </span>
+                  
+                  
 
-                  <img src="https://files.selar.co/product-images/2025/products/%E1%BB%8Cm%E1%BB%8D_Olojo/the-survivors-selar.com-68cee18849f88.jpg" alt="The Survivors" className="absolute inset-0 w-full h-full object-cover -z-10 group-hover:scale-105 transition-transform duration-700" />
+                  <img src="https://files.selar.co/product-images/2025/products/%E1%BB%8Cm%E1%BB%8D_Olojo/the-survivors-selar.com-68cee18849f88.jpg" alt="The Survivors" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   
                   {/* Arrow overlay */}
-                  <div className="absolute top-6 right-6 w-12 h-12 bg-white backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-brand-void/5 z-20 transition-transform duration-300 group-hover:scale-110">
+                  <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-brand-void/10 z-20 group-hover:scale-105 transition-transform duration-300">
                     <ArrowRight className="w-5 h-5 text-brand-void" />
                   </div>
                </div>
@@ -95,18 +93,16 @@ export default function Home() {
             </Link>
 
             {/* Item 2: Latest Research Paper */}
-            <Link href="/research" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/50 to-transparent z-0"></div>
+            <Link href="/research" className="group flex flex-col items-start gap-6 border-0">
+               <div className="relative w-full aspect-[4/5] rounded-3xl bg-brand-void/5 overflow-hidden border border-brand-void/5">
+                  
 
-                  <span className="font-heading font-bold text-white uppercase tracking-widest text-xs z-10 absolute top-6 left-6 drop-shadow-md">
-                    02 // Latest Paper
-                  </span>
+                  
 
-                  <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80" alt="Research Paper" className="absolute inset-0 w-full h-full object-cover -z-10 group-hover:scale-105 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80" alt="Research Paper" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
 
                   {/* Arrow overlay */}
-                  <div className="absolute top-6 right-6 w-12 h-12 bg-white backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-brand-void/5 z-20 transition-transform duration-300 group-hover:scale-110">
+                  <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-brand-void/10 z-20 group-hover:scale-105 transition-transform duration-300">
                     <ArrowRight className="w-5 h-5 text-brand-void" />
                   </div>
                </div>
@@ -126,18 +122,16 @@ export default function Home() {
             </Link>
 
             {/* Item 3: New Music Release */}
-            <Link href="/creative" className="group flex flex-col items-start gap-4 border-0">
-               <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-void/50 to-transparent z-0"></div>
+            <Link href="/creative" className="group flex flex-col items-start gap-6 border-0">
+               <div className="relative w-full aspect-[4/5] rounded-3xl bg-brand-void/5 overflow-hidden border border-brand-void/5">
+                  
 
-                  <span className="font-heading font-bold text-white uppercase tracking-widest text-xs z-10 absolute top-6 left-6 drop-shadow-md">
-                    03 // New Release
-                  </span>
+                  
 
-                  <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80" alt="Music Audio" className="absolute inset-0 w-full h-full object-cover -z-10 group-hover:scale-105 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80" alt="Music Audio" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
 
                   {/* Arrow overlay */}
-                  <div className="absolute top-6 right-6 w-12 h-12 bg-white backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-brand-void/5 z-20 transition-transform duration-300 group-hover:scale-110">
+                  <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-brand-void/10 z-20 group-hover:scale-105 transition-transform duration-300">
                     <ArrowRight className="w-5 h-5 text-brand-void" />
                   </div>
                </div>
@@ -277,7 +271,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative z-10">
             
             {/* Pillar 1 */}
-            <div className="group relative flex flex-col space-y-8 p-10 bg-white shadow-xl shadow-brand-void/5 rounded-[2.5rem] overflow-hidden border border-brand-void/5 hover:-translate-y-2 transition-transform duration-500">
+            <div className="group relative flex flex-col space-y-8 p-10 bg-white rounded-[2.5rem] overflow-hidden border border-brand-void/10">
               <div className="absolute top-0 right-0 w-64 h-64 bg-brand-solar/5 rounded-full blur-[80px] group-hover:bg-brand-solar/10 transition-colors duration-700 pointer-events-none"></div>
               <div className="w-20 h-20 bg-gradient-to-br from-brand-void/10 to-transparent rounded-2xl flex items-center justify-center relative z-10 shadow-inner">
                 <Flame className="w-10 h-10 text-brand-void group-hover:text-brand-solar transition-colors duration-500" strokeWidth={1.5} />
@@ -291,7 +285,7 @@ export default function Home() {
             </div>
 
             {/* Pillar 2 */}
-            <div className="group relative flex flex-col space-y-8 p-10 bg-white shadow-xl shadow-brand-void/5 rounded-[2.5rem] overflow-hidden border border-brand-void/5 hover:-translate-y-2 transition-transform duration-500 md:mt-12">
+            <div className="group relative flex flex-col space-y-8 p-10 bg-white rounded-[2.5rem] overflow-hidden border border-brand-void/10 md:mt-12">
               <div className="absolute top-0 -left-12 w-64 h-64 bg-brand-dawn/5 rounded-full blur-[80px] group-hover:bg-brand-dawn/10 transition-colors duration-700 pointer-events-none"></div>
               <div className="w-20 h-20 bg-gradient-to-br from-brand-void/10 to-transparent rounded-2xl flex items-center justify-center relative z-10 shadow-inner">
                 <Hexagon className="w-10 h-10 text-brand-void group-hover:text-brand-dawn transition-colors duration-500" strokeWidth={1.5} />
@@ -305,7 +299,7 @@ export default function Home() {
             </div>
 
             {/* Pillar 3 */}
-            <div className="group relative flex flex-col space-y-8 p-10 bg-white shadow-xl shadow-brand-void/5 rounded-[2.5rem] overflow-hidden border border-brand-void/5 hover:-translate-y-2 transition-transform duration-500 md:mt-24">
+            <div className="group relative flex flex-col space-y-8 p-10 bg-white rounded-[2.5rem] overflow-hidden border border-brand-void/10">
               <div className="absolute -bottom-10 right-0 w-64 h-64 bg-brand-slate/5 rounded-full blur-[80px] group-hover:bg-brand-slate/10 transition-colors duration-700 pointer-events-none"></div>
               <div className="w-20 h-20 bg-gradient-to-br from-brand-void/10 to-transparent rounded-2xl flex items-center justify-center relative z-10 shadow-inner">
                 <Zap className="w-10 h-10 text-brand-void group-hover:text-brand-slate transition-colors duration-500" strokeWidth={1.5} />
@@ -325,3 +319,4 @@ export default function Home() {
     </div>
   );
 }
+
