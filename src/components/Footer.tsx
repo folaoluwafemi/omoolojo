@@ -30,9 +30,10 @@ export default function Footer() {
           <h4 className="font-heading uppercase tracking-[0.2em] text-brand-alabaster/40 text-xs font-bold mb-2">Explore</h4>
           <nav className="flex flex-col space-y-4 font-sans text-lg font-medium text-brand-alabaster/80">
             <Link href="/" className="hover:text-brand-solar transition-colors w-fit">Home</Link>
-            <Link href="/academic" className="hover:text-brand-solar transition-colors w-fit">Academic Work</Link>
+            <Link href="/research" className="hover:text-brand-solar transition-colors w-fit">Research</Link>
+            <Link href="/academic" className="hover:text-brand-solar transition-colors w-fit">Tutoring</Link>
             <Link href="/books" className="hover:text-brand-solar transition-colors w-fit">Authorship</Link>
-            <Link href="/contact" className="hover:text-brand-solar transition-colors w-fit">Get in Touch</Link>
+            <Link href="/creative" className="hover:text-brand-solar transition-colors w-fit">Creative</Link>
           </nav>
         </div>
 

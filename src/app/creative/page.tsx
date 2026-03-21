@@ -1,4 +1,4 @@
-import { Play, Disc3, Mic2, Sparkles, BookOpen } from "lucide-react";
+import { Play, Disc3, Mic2, Sparkles, BookOpen, Flame, Shield } from "lucide-react";
 
 export default function CreativePage() {
   return (
@@ -58,7 +58,7 @@ export default function CreativePage() {
         </section>
 
         {/* Creative Services */}
-        <section>
+        <section className="mb-32">
           <div className="flex items-center gap-4 mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold uppercase tracking-tight">
               Production & Publishing
@@ -95,6 +95,46 @@ export default function CreativePage() {
               <p className="font-sans text-brand-void/70 font-medium leading-relaxed text-lg">
                 For aspiring authors—I provide end-to-end publishing infrastructure. From setting up optimized Amazon KDP and Selar storefronts, designing covers and writing compelling blurbs, to generating robust launch assets for your book marketing campaigns.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Ministry */}
+        <section>
+          <div className="flex items-center gap-4 mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold uppercase tracking-tight text-brand-void">
+              Signature Ministry Sessions
+            </h2>
+            <div className="flex-1 h-[1px] bg-brand-void/10 ml-4"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="relative overflow-hidden flex flex-col justify-end p-10 min-h-[400px] rounded-[2.5rem] bg-brand-void/5 text-brand-void group border border-brand-void/10">
+               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1438283173091-5dbf5c5a3206?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 group-hover:scale-105 transition-transform duration-1000 mix-blend-luminosity"></div>
+               <div className="absolute inset-0 bg-gradient-to-t from-brand-alabaster via-brand-alabaster/80 to-transparent"></div>
+               <div className="relative z-10 flex flex-col gap-4">
+                 <Flame className="w-8 h-8 text-brand-solar mb-2" />
+                 <h3 className="font-heading font-black text-3xl md:text-4xl uppercase tracking-tight leading-none text-brand-void">
+                   Dynamic Silence <br /> <span className="text-brand-solar">On The Supernatural Battlefield</span>
+                 </h3>
+                 <p className="font-sans text-brand-void/70 text-lg font-medium leading-relaxed max-w-sm mt-2">
+                   A masterclass unpacking the robust intersection of rigorous reason and unseen spiritual dynamics.
+                 </p>
+               </div>
+            </div>
+
+            <div className="relative overflow-hidden flex flex-col justify-end p-10 min-h-[400px] rounded-[2.5rem] bg-brand-void/5 text-brand-void group border border-brand-void/10">
+               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507693527203-d14457313bf9?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 group-hover:scale-105 transition-transform duration-1000 mix-blend-luminosity"></div>
+               <div className="absolute inset-0 bg-gradient-to-t from-brand-alabaster via-brand-alabaster/80 to-transparent"></div>
+               <div className="relative z-10 flex flex-col gap-4">
+                 <Shield className="w-8 h-8 text-brand-dawn mb-2" />
+                 <h3 className="font-heading font-black text-3xl md:text-4xl uppercase tracking-tight leading-none text-brand-void">
+                   Life Prayer <br /> <span className="text-brand-dawn">Protocol</span>
+                 </h3>
+                 <p className="font-sans text-brand-void/70 text-lg font-medium leading-relaxed max-w-sm mt-2">
+                   Structured, intentional architecture for bringing heavenly realities into earthly manifestation.
+                 </p>
+               </div>
             </div>
           </div>
         </section>

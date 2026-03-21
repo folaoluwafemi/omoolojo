@@ -7,17 +7,29 @@ export default function Home() {
       {/* 1. HERO SECTION */}
       <section className="relative h-screen w-full flex flex-col justify-center px-4 sm:px-6 lg:px-12 overflow-hidden bg-brand-alabaster">
         {/* Clean Alabaster Background */}
+        <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-brand-solar/10 blur-[120px] rounded-full z-0 pointer-events-none"></div>
+        <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-brand-dawn/10 blur-[100px] rounded-full z-0 pointer-events-none"></div>
 
         <div className="mx-auto max-w-7xl w-full flex items-center h-full relative z-10">
           
-          <div className="flex flex-col space-y-6 pt-20 w-full md:w-[60%] lg:w-[50%] z-20">
-            <h1 className="text-6xl sm:text-7xl lg:text-[8rem] xl:text-[9rem] font-heading font-black uppercase tracking-tighter leading-[0.85] text-brand-void mb-4">
-              THE <br />
-              <span className="text-brand-solar">VISIONARY</span> <br />
-              ARCHITECT
+          <div className="flex flex-col pt-20 w-full md:w-[70%] z-20">
+            <div className="inline-flex items-center space-x-3 mb-8 px-4 py-2 border border-brand-void/10 rounded-full w-fit bg-brand-alabaster/50 backdrop-blur-sm">
+              <span className="w-2 h-2 rounded-full bg-brand-solar animate-pulse"></span>
+              <span className="font-heading uppercase font-bold tracking-[0.2em] text-[0.65rem] text-brand-void/60">
+                The Multidisciplinary Thinker
+              </span>
+            </div>
+
+            <h1 className="text-5xl md:text-7xl lg:text-[8rem] font-heading font-black uppercase tracking-tighter leading-[0.85] text-brand-void mb-8 relative z-10 drop-shadow-sm">
+              Oluwafemi <br/>
+              <span className="text-brand-void/20">Israel</span>
+              <span className="block text-3xl md:text-5xl lg:text-7xl mt-4 text-brand-solar">
+                ( ỌMỌ ỌLỌ́JỌ́ )
+              </span>
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl font-sans max-w-lg leading-relaxed text-brand-slate font-light">
-              Bridging the gap between strict engineering precision and profound Christian metaphysics
+
+            <p className="text-xl md:text-2xl font-sans font-medium text-brand-void/80 max-w-2xl leading-relaxed relative z-10 bg-brand-alabaster/30 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none p-4 md:p-0 rounded-2xl md:rounded-none">
+              An electrical engineer, researcher, author, and philosophical thinker whose life&apos;s work is driven by the rigorous integration of <span className="italic">scientific reasoning</span> and <span className="italic">faith-based metaphysics</span>.
             </p>
           </div>
 
@@ -83,7 +95,7 @@ export default function Home() {
             </Link>
 
             {/* Item 2: Latest Research Paper */}
-            <Link href="/resources" className="group flex flex-col items-start gap-4 border-0">
+            <Link href="/research" className="group flex flex-col items-start gap-4 border-0">
                <div className="relative w-full aspect-[4/5] rounded-2xl bg-brand-void/5 flex flex-col justify-end p-8 overflow-hidden transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-void/50 to-transparent z-0"></div>
 
