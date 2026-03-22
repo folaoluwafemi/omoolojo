@@ -22,7 +22,7 @@ export default function Home() {
             Oluwafemi <br />
             <span className="text-brand-void/20">Israel</span>
             <span className="block text-3xl md:text-5xl lg:text-6xl xl:text-7xl mt-4 text-brand-solar">
-              ( Ọmọ Ọlọ́jọ́ )
+              ( Ọmọ Ọlọjọ )
             </span>
           </h1>
 

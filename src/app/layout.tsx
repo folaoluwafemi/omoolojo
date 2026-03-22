@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Ọmọ Ọlọ́jọ́ | Hybrid Hub",
+  title: "Ọmọ Ọlọjọ | Hybrid Hub",
   description: "Electrical Engineer, researcher, author, and creative.",
 };
 

@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Brand & Hook */}
         <div className="md:col-span-6 flex flex-col items-start space-y-8">
           <span className="font-heading text-6xl md:text-8xl font-bold uppercase tracking-tighter leading-[0.8]">
-            Ọmọ <br /> Ọlọ́jọ́
+            Ọmọ <br /> Ọlọjọ
           </span>
           <p className="font-sans text-xl font-light text-brand-alabaster/60 max-w-md leading-relaxed">
             A visionary architect of the technical and the theological. Building bridges between logic, faith, and societal innovation.

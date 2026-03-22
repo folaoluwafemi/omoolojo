@@ -1,4 +1,4 @@
-# OMỌ ỌLỌ́JỌ́ - Brand & Content Checklist
+# OMỌ Ọlọjọ - Brand & Content Checklist
 
 Use this checklist to track all the missing media, links, and content needed to finalize the website. Tick them off as you add them!
 
