@@ -1,4 +1,4 @@
-﻿import { FileText, Cpu, Radio, Network, ExternalLink } from "lucide-react";
+import { FileText, Cpu, Radio, Network, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 export default function ResearchPage() {
@@ -25,7 +25,7 @@ export default function ResearchPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group hover:shadow-xl transition-all duration-500">
+            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group hover:border-brand-solar/30 transition-all duration-500">
               <Link href="https://doi.org/10.53982/ajerd.2024.0702.25-j" target="_blank" rel="noopener noreferrer" className="block h-64 bg-brand-void/5 relative group-hover:bg-brand-solar/5 transition-colors duration-500">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <FileText className="w-10 h-10 text-brand-solar" />
@@ -49,7 +49,7 @@ export default function ResearchPage() {
               </div>
             </div>
 
-            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group hover:shadow-lg transition-shadow duration-500">
+            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group hover:border-brand-solar/30 transition-colors duration-500">
               <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-void/5 transition-colors duration-500 relative">
                   <FileText className="w-10 h-10 text-brand-void/50" />
               </div>
@@ -66,7 +66,7 @@ export default function ResearchPage() {
               </div>
             </div>
 
-            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group hover:shadow-lg transition-shadow duration-500">
+            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group hover:border-brand-solar/30 transition-colors duration-500">
               <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-void/10 transition-colors duration-500 relative">
                   <FileText className="w-10 h-10 text-brand-void/50" />
               </div>
@@ -83,7 +83,7 @@ export default function ResearchPage() {
               </div>
             </div>
 
-            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group hover:shadow-lg transition-shadow duration-500">
+            <div className="flex flex-col bg-white border border-brand-void/10 rounded-3xl overflow-hidden group hover:border-brand-solar/30 transition-colors duration-500">
               <div className="h-64 bg-brand-void/5 flex items-center justify-center group-hover:bg-brand-solar/10 transition-colors duration-500 relative">
                   <FileText className="w-10 h-10 text-brand-solar/50" />
               </div>
@@ -154,4 +154,5 @@ export default function ResearchPage() {
     </div>
   );
 }
+
 
