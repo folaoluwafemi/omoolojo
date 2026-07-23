@@ -4,14 +4,14 @@ import { ArrowLeft, Download, AlertTriangle } from 'lucide-react';
 export default function SurvivorsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-brand-alabaster text-brand-void overflow-hidden">
-      
+
       {/* 1. HERO SECTION - STARK & GRIPPING */}
       <section className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-12 overflow-hidden">
         {/* Deep, gritty background gradients to signify struggle and emerging light */}
         <div className="absolute inset-0 bg-brand-alabaster z-0"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-solar/20 blur-[120px] rounded-full translate-x-1/3 -translate-y-1/3 z-0"></div>
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-solar/20 blur-[150px] rounded-full -translate-x-1/3 translate-y-1/3 z-0"></div>
-        
+
         {/* Grain overlay for gritty texture */}
         <div className="absolute inset-0 opacity-[0.03] mix-blend-multiply z-0" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }}></div>
 
@@ -24,7 +24,7 @@ export default function SurvivorsPage() {
         </div>
 
         <div className="mx-auto max-w-7xl w-full flex flex-col lg:flex-row items-center justify-between gap-16 relative z-10 pt-20">
-          
+
           {/* Text Content */}
           <div className="flex flex-col space-y-8 w-full lg:w-1/2">
             <div className="inline-flex items-center space-x-3 px-4 py-2 bg-brand-void/5 border border-brand-void/10 rounded-full w-fit">
@@ -46,7 +46,7 @@ export default function SurvivorsPage() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-4">
               <a href="https://selar.com/841581t88l" target="_blank" className="flex items-center justify-center space-x-3 bg-brand-solar text-brand-void px-8 py-4 rounded-full font-heading font-bold uppercase tracking-widest text-sm hover:bg-brand-void hover:text-brand-alabaster transition-colors">
                 <Download className="w-5 h-5" />
-                <span>Get the Book (Free)</span>
+                <span>Get the Book</span>
               </a>
               <span className="font-sans text-brand-void/50 font-bold text-sm">
                 Digitized for the General Public
@@ -60,7 +60,7 @@ export default function SurvivorsPage() {
                <img src="https://files.selar.co/product-images/2025/products/%E1%BB%8Cm%E1%BB%8D_Olojo/the-survivors-selar.com-68cee18849f88.jpg" alt="The Survivors Book Cover" className="w-full h-full object-cover opacity-90 sepia-[0.2] contrast-125 hover:rotate-0 transition-transform duration-500" />
                <div className="absolute inset-0 bg-gradient-to-t from-brand-void/20 via-transparent to-transparent mix-blend-overlay"></div>
             </div>
-            
+
             {/* Visual Accents */}
             <div className="absolute -bottom-10 -left-10 w-32 h-32 border border-brand-solar/40 rounded-full flex items-center justify-center animate-[spin_10s_linear_infinite]">
               <div className="w-3 h-3 bg-brand-solar rounded-full absolute top-0 -translate-y-1/2"></div>
@@ -72,7 +72,7 @@ export default function SurvivorsPage() {
       {/* 2. THE CAMPAIGN & CONTEXT SECTION */}
       <section className="relative w-full py-32 px-4 sm:px-6 lg:px-12 bg-white border-t border-brand-void/5">
         <div className="mx-auto max-w-5xl w-full flex flex-col gap-12">
-          
+
           <div className="flex flex-col items-center text-center space-y-6">
             <AlertTriangle className="w-12 h-12 text-brand-solar/80" />
             <h2 className="text-4xl md:text-5xl font-heading font-black uppercase tracking-tight text-brand-void">
@@ -92,7 +92,7 @@ export default function SurvivorsPage() {
                 While the administration, led by Governor Godswill Akpabio, initiated legal action and child protection initiatives, serious concerns were raised about the enforcement of these laws and the welfare of children trapped in stigmatizing situations.
               </p>
             </div>
-            
+
             <div className="space-y-6">
               <h3 className="text-xl font-heading font-black uppercase tracking-widest text-brand-solar">
                 Educational Impact
